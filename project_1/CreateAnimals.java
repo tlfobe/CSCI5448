@@ -1,8 +1,14 @@
 public class CreateAnimals {
     public static void main(String[] args) {
-        Dog ralphie = new Dog("Doug");
-        ralphie.roam();
-        ralphie.makeNoise();
-        ralphie.eatFood("Kibble");
+        Animal doug = new Dog("Doug");
+        doug.roam();
+        doug.makeNoise();
+        doug.eatFood("Kibble");
+        doug.sleep();
+        Animal earnie = new Elephant("Earnie");
+        earnie.roam();
+        earnie.makeNoise();
+        earnie.eatFood("Hay");
+        earnie.sleep();
     }
 }
