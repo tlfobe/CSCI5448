@@ -10,5 +10,10 @@ public class CreateAnimals {
         earnie.makeNoise();
         earnie.eatFood("Hay");
         earnie.sleep();
+        Animal casper = new Cat("Casper");
+        casper.roam();
+        casper.makeNoise();
+        casper.eatFood("Milk");
+        casper.sleep();
     }
 }
