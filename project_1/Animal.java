@@ -153,31 +153,31 @@ class Cat extends Feline {
     public Cat(String name) {
         super(name);
     }
-    public void doAnything() {
+    public void doAnything(int desired_method) {
         Random rand = new Random();
-        int i = rand.nextInt(6);
-        while (i < 5) {          
+        int i = rand.nextInt(5);
+        while (i != desired_method) {          
             catMethods[i].action();
-            i = rand.nextInt(6);
+            i = rand.nextInt(5);
         }
     }
     public void sleep() {
-        doAnything();
+        doAnything(0);
         _sleep();
     }
 
     public void makeNoise() {
-        doAnything();
+        doAnything(1);
         _makeNoise();
     }
 
     public void eatFood(String food) {
-        doAnything();
+        doAnything(3);
         _eatFood(food);
     }
 
     public void roam() {
-        doAnything();
+        doAnything(2);
         _roam();
     }
 
