@@ -111,6 +111,7 @@ class Elephant extends Pachyderm {
         System.out.println(this.name + " the " + this.animalType + " gingerly eats the " + food + " with its trunk!");
     }
 }
+
 class Tiger extends Feline {
     public Tiger(String name) {
         super(name);
@@ -137,6 +138,117 @@ class Lion extends Feline {
     }
 }
 
+class Cat2 extends Feline {
+
+    
+    interface doAction {
+        void action();
+    }
+
+    private doAction[] catMethods = new doAction[] {
+        new doAction() { public void action() {_sleep(); } },
+        new doAction() { public void action() {_makeNoise(); } },
+        new doAction() { public void action() {_roam(); } },
+        new doAction() { public void action() {_eatFood(); } },
+        new doAction() { public void action() {_hiss(); } },
+    };
+
+    private int numActions = catMethods.length;
+    private Random rand = new Random();
+
+    public Cat2(String name) {
+        super(name);
+    }
+
+    private boolean shouldI() {
+        int i = rand.nextInt(10);
+        if(i >= 5) {
+            return true;
+        }
+        else {
+            return false;
+        }
+    }
+
+    public void sleep() {
+        int index = 0;
+        if(shouldI()) {
+            _sleep();
+        }
+        else {
+            int i = rand.nextInt(numActions);
+            while(i == index) {
+                i = rand.nextInt(numActions);
+            }
+            catMethods[i].action();
+        }
+    }
+
+    public void roam() {
+        int index = 2;
+        if(shouldI()) {
+            _roam();
+        }
+        else {
+            int i = rand.nextInt(numActions);
+            while(i == index) {
+                i = rand.nextInt(numActions);
+            }
+            catMethods[i].action();
+        }
+    }
+
+    public void makeNoise() {
+        int index = 1;
+        if(shouldI()) {
+            _makeNoise();
+        }
+        else {
+            int i = rand.nextInt(numActions);
+            while(i == index) {
+                i = rand.nextInt(numActions);
+            }
+            catMethods[i].action();
+        }
+    }
+
+    public void eatFood(String food) {
+        int index = 3;
+        if(shouldI()) {
+            _eatFood();
+        }
+        else {
+            int i = rand.nextInt(numActions);
+            while(i == index) {
+                i = rand.nextInt(numActions);
+            }
+            catMethods[i].action();
+        }
+    }
+
+    private void _sleep() {
+        super.sleep();    
+    }
+
+    private void _roam() {
+        super.roam();
+    }
+
+    private void _makeNoise() {
+        System.out.println(this.name + " the " + this.animalType + ": Meeeooooown!");
+    }
+
+    private void _eatFood() {
+        System.out.println(this.name + " the " + this.animalType + ": Slurp Slurp Slurp!");
+        System.out.println("Not a trace of fish is left in the bowl!");
+    }
+
+    private void _hiss() {
+        System.out.println(this.name + " the " + this.animalType + ": Hissssssssss!");
+    }
+
+
+}
 
 class Cat extends Feline {
 
