@@ -138,7 +138,7 @@ class Lion extends Feline {
     }
 }
 
-class Cat2 extends Feline {
+class Cat extends Feline {
 
     
     interface doAction {
@@ -156,7 +156,7 @@ class Cat2 extends Feline {
     private int numActions = catMethods.length;
     private Random rand = new Random();
 
-    public Cat2(String name) {
+    public Cat(String name) {
         super(name);
     }
 
@@ -248,65 +248,4 @@ class Cat2 extends Feline {
     }
 
 
-}
-
-class Cat extends Feline {
-
-    interface doAction {
-        void action();
-    }
-    private doAction[] catMethods = new doAction[] {
-        new doAction() { public void action() {_sleep(); } },
-        new doAction() { public void action() {_makeNoise(); } },
-        new doAction() { public void action() {_roam(); } },
-        new doAction() { public void action() {_eatFood("Fish"); } },
-        new doAction() { public void action() {_hiss(); } }
-    };
-    public Cat(String name) {
-        super(name);
-    }
-    public void doAnything(int desired_method) {
-        Random rand = new Random();
-        int i = rand.nextInt(5);
-        while (i != desired_method) {          
-            catMethods[i].action();
-            i = rand.nextInt(5);
-        }
-    }
-    public void sleep() {
-        doAnything(0);
-        _sleep();
-    }
-
-    public void makeNoise() {
-        doAnything(1);
-        _makeNoise();
-    }
-
-    public void eatFood(String food) {
-        doAnything(3);
-        _eatFood(food);
-    }
-
-    public void roam() {
-        doAnything(2);
-        _roam();
-    }
-
-    private void _makeNoise() {
-        System.out.println(this.name + " the " + this.animalType + ": Meeeooooown!");
-    }
-    private void _sleep() {
-        super.sleep();
-    }
-    private void _eatFood(String food) {
-        System.out.println(this.name + " the " + this.animalType + ": Slurp Slurp Slurp!");
-        System.out.println("Not a trace of " + food + " is left in the bowl!");
-    }
-    private void _hiss() {
-        System.out.println(this.name + " the " + this.animalType + ": Hissssssssss!");
-    }
-    private void _roam() {
-        super.roam();
-    }
 }

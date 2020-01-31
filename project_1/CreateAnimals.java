@@ -10,7 +10,7 @@ public class CreateAnimals {
         Animal elephant = new Elephant("Earnie");
         Animal tiger = new Tiger("Trunks");
         Animal lion = new Lion("Leon");
-        Animal cat = new Cat2("Casper");
+        Animal cat = new Cat("Casper");
 
         List<Animal> zoo = new ArrayList<Animal> ();
 
