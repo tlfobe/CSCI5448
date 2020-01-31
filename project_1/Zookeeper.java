@@ -9,6 +9,7 @@ class Zookeeper {
         this.zoo = zoo;        
     }
 
+    // each action iterates over all animals
     public void wakeUpAnimals() {
         System.out.println("-----  WAKE UP THE ANIMALS  -----");
         for (Animal animal : zoo) {
@@ -19,7 +20,6 @@ class Zookeeper {
     public void rollCall() {
         System.out.println("-----  ROLL CALL  -----");
         for (Animal animal : zoo) {
-            // System.out.print(animal.name + " the " + animal.animalType + " says ");
             animal.makeNoise();
         }
     }
@@ -28,7 +28,7 @@ class Zookeeper {
         System.out.println("-----  FEEDING TIME  -----");
         for (Animal animal : zoo) {
             System.out.println(name + " feeds " + animal.name +  " the " + animal.animalType  + ".");
-            animal.eatFood("food"); // Maybe we need to make the food an internal class object?
+            animal.eatFood("food"); 
         }
     }
 

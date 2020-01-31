@@ -1,6 +1,9 @@
 import java.util.Random;
 import java.util.ArrayList;
 
+// Most classes just require some simple overriding to print out 
+// animal specific responses. 
+
 abstract class Animal {
     
     protected String name;
@@ -139,8 +142,12 @@ class Lion extends Feline {
 }
 
 class Cat extends Feline {
+    /*
+     The cat ponders whether to do the 
+     requested action or not using a 
+     random number generator. 
+    */
 
-    
     interface doAction {
         void action();
     }
@@ -160,6 +167,7 @@ class Cat extends Feline {
         super(name);
     }
 
+    // rnd generator
     private boolean shouldI() {
         int i = rand.nextInt(10);
         if(i >= 5) {
@@ -170,8 +178,11 @@ class Cat extends Feline {
         }
     }
 
+    // public methods sometimes do the right action, 
+    // or a completely different action using a list 
+    // of private methods that relate to the actual action.
     public void sleep() {
-        int index = 0;
+        int index = 0; // index in catMethods
         if(shouldI()) {
             _sleep();
         }
@@ -226,6 +237,7 @@ class Cat extends Feline {
         }
     }
 
+    // "real" methods
     private void _sleep() {
         super.sleep();    
     }
