@@ -1,4 +1,6 @@
 from abc import ABC
+import AnimalBehaviors as ab
+import numpy as np
 
 class Animal(ABC):
     def __init__(self, name):
@@ -6,128 +8,164 @@ class Animal(ABC):
         # we'll consider _ to be protected and __ to be private
         self._name = name
         self._type = None
+        self._sleepBehavior = ab.DefaultSleepBehavior(self)
+        self._eatFoodBehavior = None
+        self._makeNoiseBehavior = None
+        self._roamBehavior = None
+
+    def _setSleepBehavior(self, sleep_behavior):
+        self._sleepBehavior = sleep_behavior
+
+    def _setEatFoodBehavior(self, eat_behavior):
+        self._eatFoodBehavior = eat_behavior
+
+    def _setMakeNoiseBehavior(self, noise_behavior):
+        self._makeNoiseBehavior = noise_behavior
+
+    def _setRoamBehavior(self, roam_behavior):
+        self._roamBehavior = roam_behavior
 
     def sleep(self):
-        print(f"{self._name} the {self._type}: ZZZZzzzzzzzz")
-    
+        self._sleepBehavior.sleep()
+
     def roam(self):
-        raise NotImplementedError
+        self._roamBehavior.roam()
 
     def makeNoise(self):
-        raise NotImplementedError
+        self._makeNoiseBehavior.makeNoise()
 
-    def eatFood(self, food):
-        raise NotImplementedError
-
+    def eatFood(self, food = None):
+        if food == None:
+            self._eatFoodBehavior.eatFood()
+        else:
+            self._eatFoodBehavior.eatFood(food)
 
 class Feline(Animal):
     def __init__(self, name):
         super(Feline, self).__init__(name)
-
-    def roam(self):
-        print(f"{self._name} the {self._type} lazily pads around the den.")    
-
+        self._setRoamBehavior(ab.PaddingRoamBehavior(self))
+        
 
 class Pachyderm(Animal):
     def __init__(self, name):
         super(Pachyderm, self).__init__(name)
-
-    def roam(self):
-        print(f"{self._name} the {self._type} slowly waddles aroudn the field.")
+        self._setRoamBehavior(ab.WaddlesRoamBehavior(self))
 
 class Canine(Animal):
     def __init__(self, name):
         super(Canine, self).__init__(name)
-
-    def roam(self):
-        print(f"{self._name} the {self._type} excitedly runs around the yard.")
-
+        self._setRoamBehavior(ab.RunRoamBehavior(self))
 
 class Dog(Canine):
     def __init__(self, name):
         super(Dog, self).__init__(name)
         self._type = "Dog"
+        self._setMakeNoiseBehavior(ab.barkBehavior(self))
+        self._setEatFoodBehavior(ab.DomesticatedMessyEatFoodBehavior(self))
     
-    def makeNoise(self):
-        print(f"{self._name} the {self._type}: Woof!")
-    
-    def eatFood(self, food='kibble'):
-        print(f"{self._name} the {self._type}: Nom Nom Nom ")
-        print(f"Pieces of {food} are littered all over the floor!")
-
 class Wolf(Canine):
     def __init__(self, name):
-        super(Dog, self).__init__(name)
+        super(Wolf, self).__init__(name)
         self._type = "Wolf"
-
-    def makeNoise(self):
-        print(f"{self._name} the {self._type}: Awoooo!")
-
-    def eatFood(self, food='lamb'):
-        print(f"{self.name} the {self._type}: Chomp Chomp Chomp")
-        print(f"Shredded morsels of {food} are scatted all over the place!")
+        self._setMakeNoiseBehavior(ab.HowlBehavior(self))
+        self._setEatFoodBehavior(ab.WildMessyEatFoodBehavior(self))
 
 class Fox(Canine):
     def __init__(self, name):
         super(Fox, self).__init__(name)
         self._type = "Fox"
+        self._setMakeNoiseBehavior(ab.HowlBehavior(self))
+        self._setEatFoodBehavior(ab.WildNeatEatFoodBehavior(self))
 
-    def makeNoise(self):
-        print(f"{self._name} the {self._type}: Awoooo!")
-
-    def eatFood(self, food='kibble'):
-        print(f"{self._name} the {self._type}: Chomp Chomp Chomp")
-        print(f"Tiny shreds of " + {food} + " are sprinkled all over the floor!")
     
 class Hippo(Pachyderm):
     def __init__(self, name):
         super(Hippo, self).__init__(name)
         self._type = "Hippo"
-
-    def makeNoise(self):
-        print(f"{self._name} the {self._type}: Huff Huff Huff!")
-
-    def eatFood(self, food='fish'):
-        print(f"{self._name} the {self._type}: Flap Flap Flap")
-        print(f"{self._name} the {self._type} powerfully crushes the {food} in one bite!")
+        self._setMakeNoiseBehavior(ab.HuffMakeNoiseBehavior(self))
+        self._setEatFoodBehavior(ab.BigMouthEatFoodBehavior(self))
 
 class Elephant(Pachyderm):
     def __init__(self, name):
         super(Elephant, self).__init__(name)
         self._type = "Elephant"
-
-    def makeNoise(self):
-        print(f"{self._name} the {self._type}: Twoot Twoooooot!")
-
-    def eatFood(self, food='peanuts'):
-        print(f"{self._name} the {self._type}: Crunch Crunch Crunch")
-        print(f"{self._name} the {self._type} gingerly eats the {food} with its trunk")
+        self._setMakeNoiseBehavior(ab.TrunkTootMakeNoiseBehavior(self))
+        self._setEatFoodBehavior(ab.TrunkEatFoodBehavior(self))
 
 
 class Tiger(Feline):
     def __init__(self, name):
         super(Tiger,self).__init__(name)
         self._type = "Tiger"
-
-    def makeNoise(self):
-        print(f"{self._name} the {self._type}: Roaar Roaar!")
-
-    def eatFood(self, food='deer')
-        print(f"{self._name} the {self._type}: Crunch Crunch")
-        print(f"Pieces of {food} cling to {self._name}'s paws!'")
+        self._setMakeNoiseBehavior(ab.RoarMakeNoiseBehavior(self))
+        self._setEatFoodBehavior(ab.StickyPawsEatFoodBehavior(self))
 
 class Lion(Feline):
     def __init__(self, name):
         super(Lion, self).__init__(name)
         self._type = "Lion"
+        self._setMakeNoiseBehavior(ab.RoarMakeNoiseBehavior(self))
+        self._setEatFoodBehavior(ab.StickyManeEatFoodBehavior(self))
 
-    def makeNoise(self):
-        print(f"{self._name} the {self._type}: Roaaar Roaar!")
-        print(f"Pinces of {food} cling to {self._name}'s mane!'")
+class ElephantLionChimera(Pachyderm, Feline): # Inherits Pachyderm methods before Feline methods
+    def __init__(self, name):
+        super(ElephantLionChimera, self).__init__(name)
+        self._type = "Elephant Lion Chimera"
+        self._setMakeNoiseBehavior(ab.TrunkTootMakeNoiseBehavior(self))
+        self._setEatFoodBehavior(ab.StickyManeEatFoodBehavior(self))
+
 
 class Cat(Feline):
     def __init__(self, name):
-        raise NotImplementedError
+        super(Cat, self).__init__(name)
+        self._type = "Cat"
+        self._setMakeNoiseBehavior(ab.MeowMakeNoiseBehavior(self))
+        self._setEatFoodBehavior(ab.DomesticatedNeatEatFoodBehavior(self))
+        self._hissMakeNoiseBehavior = ab.HissMakeNoiseBehavior(self)
+        self._actions = [
+                        self._sleep,
+                        self._eatFood,
+                        self._roam,
+                        self._hiss,
+                        self._makeNoise,
+                       ]
+
+    def _shouldI(self, action_i):
+        rand_action = np.random.randint(5)
+        while rand_action != action_i:
+            self._actions[rand_action]()
+            rand_action = np.random.randint(5)
+
+    def _sleep(self):
+        self._sleepBehavior.sleep()
+
+    def _roam(self):
+        self._roamBehavior.roam()
+
+    def _makeNoise(self):
+        self._makeNoiseBehavior.makeNoise()
+
+    def _eatFood(self, food = None):
+        self._eatFoodBehavior.eatFood()
+
+    def _hiss(self):
+        self._hissMakeNoiseBehavior.makeNoise()
+
+    def sleep(self):
+        self._shouldI(0)
+        self._sleep()
+
+    def roam(self):
+        self._shouldI(2)
+        self._roam()
+
+    def makeNoise(self):
+        self._shouldI(4)
+        self._makeNoise()
+
+    def eatFood(self, food = None):
+        self._shouldI(1)
+        self.eatFood(food)
 
 if __name__ == "__main__":
     f = Feline("asdf")
