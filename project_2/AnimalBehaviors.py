@@ -34,7 +34,6 @@ class DefaultSleepBehavior(sleepBehavior):
     def sleep(self):
         print(f"{self._animal._name} the {self._animal._type}: ZZZZZZZzzzzzzzz")
 
-
 # RoamBehaviors
 
 class PaddingRoamBehavior(RoamBehavior):
@@ -65,23 +64,28 @@ class HuffMakeNoiseBehavior(makeNoiseBehavior):
 
 class TrunkTootMakeNoiseBehavior(makeNoiseBehavior):
     def makeNoise(self):
-        print(f"{self._name} the {self._type}: Twoot Twoooooot!")
+        print(f"{self._animal._name} the {self._animal._type}: Twoot Twoooooot!")
 
 class RoarMakeNoiseBehavior(makeNoiseBehavior):
     def makeNoise(self):
-        print(f"{self._name} the {self._type}: Roaar Roaar!")
+        print(f"{self._animal._name} the {self._animal._type}: Roaar Roaar!")
 
 class MeowMakeNoiseBehavior(makeNoiseBehavior):
     def makeNoise(self):
-        print(f"{self._name} the {self._type}: Meeeeeeoooow!")
+        print(f"{self._animal._name} the {self._animal._type}: Meeeeeeoooow!")
 
 class HissMakeNoiseBehavior(makeNoiseBehavior):
     def makeNoise(self):
-        print(f"{self._name} the {self._type}: Hissssssss!")
+        print(f"{self._animal._name} the {self._animal._type}: Hissssssss!")
 
 # EatBehaviors
 
 class DomesticatedMessyEatFoodBehavior(eatFoodBehavior):
+    def eatFood(self, food='kibble'):
+        print(f"{self._animal._name} the {self._animal._type}: Nom Nom Nom ")
+        print(f"Pieces of {food} are littered all over the floor!")
+
+class DomesticatedNeatEatFoodBehavior(eatFoodBehavior):
     def eatFood(self, food='kibble'):
         print(f"{self._animal._name} the {self._animal._type}: Nom Nom Nom ")
         print(f"Pieces of {food} are littered all over the floor!")
@@ -93,26 +97,26 @@ class WildMessyEatFoodBehavior(eatFoodBehavior):
 
 class WildNeatEatFoodBehavior(eatFoodBehavior):
     def eatFood(self, food='kibble'):
-        print(f"{self._name} the {self._type}: Chomp Chomp Chomp")
+        print(f"{self._animal._name} the {self._animal._type}: Chomp Chomp Chomp")
         print(f"Tiny shreds of " + {food} + " are sprinkled all over the floor!")
 
 class BigMouthEatFoodBehavior(eatFoodBehavior):
-    def eatFood(self, food = "watermelon")
-        print(f"{self._name} the {self._type}: Flap Flap Flap")
-        print(f"{self._name} the {self._type} powerfully crushes the {food} in one bite!")
+    def eatFood(self, food = "watermelon"):
+        print(f"{self._animal._name} the {self._animal._type}: Flap Flap Flap")
+        print(f"{self._animal._name} the {self._animal._type} powerfully crushes the {food} in one bite!")
 
 class TrunkEatFoodBehavior(eatFoodBehavior):
     def eatFood(self, food='peanuts'):
-        print(f"{self._name} the {self._type}: Crunch Crunch Crunch")
-        print(f"{self._name} the {self._type} gingerly eats the {food} with its trunk")
+        print(f"{self._animal._name} the {self._animal._type}: Crunch Crunch Crunch")
+        print(f"{self._animal._name} the {self._animal._type} gingerly eats the {food} with its trunk")
 
 class StickyPawsEatFoodBehavior(eatFoodBehavior):
     def eatFood(self, food='deer'):
-        print(f"{self._name} the {self._type}: Crunch Crunch")
-        print(f"Pieces of {food} cling to {self._name}'s paws!'")
+        print(f"{self._animal._name} the {self._animal._type}: Crunch Crunch")
+        print(f"Pieces of {food} cling to {self._animal._name}'s paws!'")
 
 class StickyManeEatFoodBehavior(eatFoodBehavior):
-    def eatFood(self, food='gazelle')
-        print(f"{self._name} the {self._type}: Crunch Crunch")
-        print(f"Pinces of {food} cling to {self._name}'s mane!'")
+    def eatFood(self, food='gazelle'):
+        print(f"{self._animal._name} the {self._animal._type}: Crunch Crunch")
+        print(f"Pinces of {food} cling to {self._animal._name}'s mane!'")
 
