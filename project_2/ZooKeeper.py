@@ -1,4 +1,27 @@
-class ZooKeeper():
+from abc import ABC
+from abc import abstractmethod
+
+class Observer(ABC):
+    @abstractmethod
+    def update(self, subject: Subject):
+        pass
+
+class Subject(ABC):
+    @abstractmethod
+    def attach(self, observer: Observer) -> None:
+        pass
+
+    @abstractmethod
+    def detach(self, observer: Observer) -> None:
+        pass
+
+    @abstractmethod
+    def notify(self) -> None:
+        pass
+
+
+
+class ZooKeeper(Subject):
     def __init__(self, name, zoo):
         self.name = name
         self.zoo = zoo
@@ -29,5 +52,5 @@ class ZooKeeper():
             animal.sleep()
 
 
-class ZooAnnoucer():
-    pass
+class ZooAnnoucer(Observer):
+    pass    
