@@ -11,6 +11,6 @@ Language: Python3.7
 
 Run the code:
 ```bash
-python CreateAnimals.py
+python RunZoo.py
 ```
 
