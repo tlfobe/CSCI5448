@@ -1,5 +1,3 @@
-from ABC import abc
-
 class ZooKeeper():
     def __init__(self, name, zoo):
         self.name = name

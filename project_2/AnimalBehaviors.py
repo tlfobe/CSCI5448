@@ -98,7 +98,7 @@ class WildMessyEatFoodBehavior(eatFoodBehavior):
 class WildNeatEatFoodBehavior(eatFoodBehavior):
     def eatFood(self, food='kibble'):
         print(f"{self._animal._name} the {self._animal._type}: Chomp Chomp Chomp")
-        print(f"Tiny shreds of " + {food} + " are sprinkled all over the floor!")
+        print(f"Tiny shreds of {food} are sprinkled all over the floor!")
 
 class BigMouthEatFoodBehavior(eatFoodBehavior):
     def eatFood(self, food = "watermelon"):
