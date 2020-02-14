@@ -1,7 +1,7 @@
 from ABC import abc
 
 class ZooKeeper():
-    def __init__(name, zoo):
+    def __init__(self, name, zoo):
         self.name = name
         self.zoo = zoo
 
