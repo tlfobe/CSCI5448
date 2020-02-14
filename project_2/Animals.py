@@ -60,21 +60,21 @@ class Dog(Canine):
     def __init__(self, name):
         super(Dog, self).__init__(name)
         self._type = "Dog"
-        self._setMakeNoiseBehavior(ab.barkBehavior(self))
+        self._setMakeNoiseBehavior(ab.BarkMakeNoiseBehavior(self))
         self._setEatFoodBehavior(ab.DomesticatedMessyEatFoodBehavior(self))
     
 class Wolf(Canine):
     def __init__(self, name):
         super(Wolf, self).__init__(name)
         self._type = "Wolf"
-        self._setMakeNoiseBehavior(ab.HowlBehavior(self))
+        self._setMakeNoiseBehavior(ab.HowlMakeNoiseBehavior(self))
         self._setEatFoodBehavior(ab.WildMessyEatFoodBehavior(self))
 
 class Fox(Canine):
     def __init__(self, name):
         super(Fox, self).__init__(name)
         self._type = "Fox"
-        self._setMakeNoiseBehavior(ab.HowlBehavior(self))
+        self._setMakeNoiseBehavior(ab.HowlMakeNoiseBehavior(self))
         self._setEatFoodBehavior(ab.WildNeatEatFoodBehavior(self))
 
     
@@ -146,7 +146,10 @@ class Cat(Feline):
         self._makeNoiseBehavior.makeNoise()
 
     def _eatFood(self, food = None):
-        self._eatFoodBehavior.eatFood()
+        if food == None:
+            self._eatFoodBehavior.eatFood()
+        else:
+            self._eatFoodBehavior.eatFood(food)
 
     def _hiss(self):
         self._hissMakeNoiseBehavior.makeNoise()
@@ -165,7 +168,7 @@ class Cat(Feline):
 
     def eatFood(self, food = None):
         self._shouldI(1)
-        self.eatFood(food)
+        self._eatFood(food)
 
 if __name__ == "__main__":
     f = Feline("asdf")
