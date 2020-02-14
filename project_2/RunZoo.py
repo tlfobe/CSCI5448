@@ -15,11 +15,19 @@ def main():
           ]
     
     zeke = ZooKeeper.ZooKeeper("Zeke", zoo)
+    zain = ZooKeeper.ZooAnnoucer("Zain", zeke)
+    zeke.attach(zain)
     zeke.wakeUpAnimals()
     zeke.rollCall()
     zeke.feedTheAnimals()
     zeke.exersizeTheAnimals()
     zeke.goToSleep()
+    zeke.detach(zain)
+    
+    # Not necesary in python, but still possible!
+    del zeke
+    del zain
+    del zoo
 
 
 if __name__ == "__main__":
