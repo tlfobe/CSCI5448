@@ -81,9 +81,9 @@ class ZooAnnoucer(Observer):
         self.subject = zookeeper
 
     def update(self, subject: Subject):
-        self.announce(subject._observable)
+        self._announce(subject._observable)
 
-    def announce(self, action: str):
+    def _announce(self, action: str):
         print(self.name + ": Attention everyone!")
         print(self.name + ": Please direct your attention to " + self.subject.name + " the zookeeper!")
         print(self.name + ": " + self.subject.name + " is " + action + "!")
