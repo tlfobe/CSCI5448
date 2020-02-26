@@ -87,8 +87,8 @@ class DomesticatedMessyEatFoodBehavior(eatFoodBehavior):
 
 class DomesticatedNeatEatFoodBehavior(eatFoodBehavior):
     def eatFood(self, food='kibble'):
-        print(f"{self._animal._name} the {self._animal._type}: Nom Nom Nom ")
-        print(f"Pieces of {food} are littered all over the floor!")
+        print(f"{self._animal._name} the {self._animal._type}: nom nom noom ")
+        print(f"Some pieces of {food} are still left in the bowl!")
 
 class WildMessyEatFoodBehavior(eatFoodBehavior):
     def eatFood(self, food='lamb'):
