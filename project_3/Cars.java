@@ -1,9 +1,12 @@
 abstract class Car {
-    private String plate;
+    protected String plate;
+    protected float cost;
 
     public Car(String licensePlate) {
         plate = licensePlate;
     }
+
+    abstract public float cost();
 }
 
 
