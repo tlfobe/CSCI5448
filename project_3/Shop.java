@@ -1,4 +1,4 @@
-import Cars.*;
+
 import java.util.Arrays;
 import java.util.ArrayList;
 import java.util.List;
@@ -77,18 +77,32 @@ public abstract class CarPool extends CarFactory implements Pool {
 }
 
 public class Shop {
-    CarPool carpool;
+    private CarPool carpool;
+    private List<> observers = new List<T>();
+    private int cars_left; // can be used to verify customers
 
-    public Shop() {
+    public Shop(int num_cars) {
         // generate the list of cars that the shop has available as an object pool (blocking queue)
-        carpool = new CarPool(25);
+        carpool = new CarPool(num_cars);
+        cars_left = num_cars;
     }
 
 
-    public publish() {
-        // publish the following data
-        // 
+    public void setState() {
+        // notify all observers
+        notifyAllObservers();
     }
+
+    public void attach(T observer) {
+        observers.add(observer);
+    }
+
+    public void notifyAllObservers() {
+        for (T obs : observers){
+            obs.update();
+        }
+    }
+
 }
 
 
