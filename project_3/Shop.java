@@ -76,7 +76,7 @@ public abstract class CarPool extends CarFactory implements Pool {
     }
 }
 
-public class Shop {
+public class Shop extends CarPool{
     CarPool carpool;
 
     public Shop() {
