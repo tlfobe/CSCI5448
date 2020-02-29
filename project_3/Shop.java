@@ -95,16 +95,6 @@ public class Shop extends CarPool{
 
 
 
-<<<<<<< HEAD
-// object pool
-interface CarPool {
-    Car get();
-    void release(Car car);
-    void shutdown();
-}
-=======
-
->>>>>>> 9b3b32b7fb555de03781260d00fe82926878d88e
 
 
 

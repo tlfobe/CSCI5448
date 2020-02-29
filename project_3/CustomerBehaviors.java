@@ -17,10 +17,30 @@ abstract class RentCarBehavior extends Behavior {
     public RentCarBehavior(Customer customer) {
         super(customer);
     }
-    public void rentCars(Shop shop) {
+    public void setPrefences(Shop shop) {
         wantGPS = new Random().nextInt( 1 + 1 ) == 0;
         wantSateliteRadio = new Random().nextInt( 1 + 1 ) == 0;
         carSeats = new Random().nextInt( 3 + 1 );
+    }
+
+    abstract void rentCars(Shop shop);
+
+    protected void generalRentCars(Shop shop, int n_cars, int n_nights) {
+        for (int i = 0; i < n_cars; i++) {
+            Car car = shop.get();
+            setPrefences(shop); // gives different preferences per car
+            if (wantGPS == true) {
+                car = new GPS(car);
+            }
+            if (wantSateliteRadio == true) {
+                car = new SateliteRadio(car);
+            }
+            for (int j = 0; j < carSeats; j++) {
+                car = new CarSeat(car);
+            }
+            customer.rented_cars.add(car);
+            customer.days_left.add(n_nights);
+        }
     }
 }
 
@@ -38,22 +58,11 @@ class CasualRentCar extends RentCarBehavior {
         super(customer);
     }
     public void rentCars(Shop shop) {
-        super.rentCars(shop);
         // Rent 1 car
         // For 1 to 3 nights
         int n_nights = new Random().nextInt(2 + 1) + 1;
-        Car car = shop.get();
-        if (wantGPS == true) {
-            car = new GPS(car);
-        }
-        if (wantSateliteRadio == true) {
-            car = new SateliteRadio(car);
-        }
-        for (int i = 0; i < carSeats; i++) {
-            car = new CarSeat(car);
-        }
-        customer.rented_cars.add(car);
-        customer.days_left.add(n_nights);
+        int n_cars = 1;
+        generalRentCars(shop, n_cars, n_nights);
     }
 }
 
@@ -62,25 +71,9 @@ class BusinessRentCar extends RentCarBehavior {
         super(customer);
     }
     public void rentCars(Shop shop) {
-        // Rent 3 cars
-        // for 7 nights
         int n_nights = 7;
         int n_cars = 3;
-        for (int i = 0; i < n_cars; i++) {
-            Car car = shop.get();
-            super.rentCars(shop); // gives different preferences per car
-            if (wantGPS == true) {
-                car = new GPS(car);
-            }
-            if (wantSateliteRadio == true) {
-                car = new SateliteRadio(car);
-            }
-            for (int j = 0; j < carSeats; j++) {
-                car = new CarSeat(car);
-            }
-            customer.rented_cars.add(car);
-            customer.days_left.add(n_nights);
-        }
+        generalRentCars(shop, n_cars, n_nights);
     }
 }
 
@@ -89,26 +82,13 @@ class RegularRentCar extends RentCarBehavior {
         super(customer);
     }
     public void rentCars(Shop shop) {
-        super.rentCars(shop);
         // Rent 1 to 3
         // for 3 to 5 nights
+        // should probably implement a check to make
+        //  sure we don't pull from an empty shop
         int n_nights = new Random().nextInt(2 + 1) + 3;
         int n_cars = new Random().nextInt(2 + 1) + 1;
-        for (int i = 0; i < n_cars; i++) {
-            Car car = shop.get();
-            super.rentCars(shop); // gives different preferences per car
-            if (wantGPS == true) {
-                car = new GPS(car);
-            }
-            if (wantSateliteRadio == true) {
-                car = new SateliteRadio(car);
-            }
-            for (int j = 0; j < carSeats; j++) {
-                car = new CarSeat(car);
-            }
-            customer.rented_cars.add(car);
-            customer.days_left.add(n_nights);
-        }
+        generalRentCars(shop, n_cars, n_nights);
     }
 }
 

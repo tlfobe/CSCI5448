@@ -5,22 +5,20 @@ interface Observer {
     public void update();
 }
 
-interface Subject {
-    public void attach(Observer o);
-    public void detach(Observer o);
-    public void notifyObs();
-    public List<Observer> observers = new LinkedList<Observer>();
-}
-
 abstract class Customer implements Observer {
     protected String name;
-    // Might write extra constructors to set these if so desired
+    // Abstract 
 
     protected RentCarBehavior rent_car_behavior;
     protected ReturnCarBehavior return_car_behavior;
     protected List< Car > rented_cars;
     protected List< Integer > days_left;
     protected Shop subject;
+    protected boolean is_viable;
+
+    abstract protected void updateViable(int n_cars_available);
+
+    // Implementation
 
     public Customer(String name, Shop shop) {
         this.name = name;
@@ -32,22 +30,25 @@ abstract class Customer implements Observer {
     }
 
     public void returnCar( Shop shop, Car car) {
-        return_car_behavior.returnCars(shop);
+        return_car_behavior.returnCar(shop, car);
     }
 
     public void update() {
-        // Not sure what getState would get... 
-        if (subject.getState()) {
-            incrDay();
-        }
+        // Not sure what getState would get...
+        int n_cars_available = subject.getState();
+        updateViable(n_cars_available);
     }
 
-    protected void incrDay() {
+    public boolean getViable() {
+        return is_viable;
+    }
+
+    public void endDay() {
         for ( int i = 0; i < rented_cars.size(); i++) {
             int days_left_i =  days_left.get(i) - 1;
             days_left.set(i, days_left_i);
             if (days_left.get(i) == 0) {
-                returnCar( subject, rented_cars.get(i) );
+                returnCar(subject, rented_cars.get(i) );
             }
         }
     }
@@ -66,6 +67,9 @@ class CasualCustomer extends Customer {
         super(name, shop);
         _setRentCarBehavior( new CasualRentCar(this) );
         _setReturnCarBehavior(new UniversalReturnCar(this));
+    }
+    public boolean isViable(int n_cars_available) {
+        
     }
 }
 
