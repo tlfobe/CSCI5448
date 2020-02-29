@@ -1,7 +1,6 @@
-import Cars.*;
 
-public class Shop {
-    private List<Cars> availableCars;
+class Shop implements CarPool, Subject{
+    private List<Car> availableCars;
 
     public Shop() {
         // generate the list of cars that the shop has available as an object pool (blocking queue)
@@ -13,9 +12,9 @@ public class Shop {
 
 
 // object pool
-public interface Pool {
-    T get();
-    void release(T object);
+interface CarPool {
+    Car get();
+    void release(Car car);
     void shutdown();
 }
 

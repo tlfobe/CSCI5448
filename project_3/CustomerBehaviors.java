@@ -1,7 +1,10 @@
+import java.util.Random;
+
+
 // Abstract Behaviors
 
 abstract class Behavior {
-    private Customer customer;
+    protected Customer customer;
     public Behavior( Customer customer) {
         this.customer = customer;
     }
@@ -11,14 +14,18 @@ abstract class RentCarBehavior extends Behavior {
     public RentCarBehavior(Customer customer) {
         super(customer);
     }
-    public abstract void rentCars(Shop shop);
+    public void rentCars(Shop shop) {
+        boolean wantGPS = new Random().nextInt( 1 + 1 ) == 0;
+        boolean wantSateliteRadio = new Random().nextInt( 1 + 1 ) == 0;
+        int carSeats = new Random().nextInt( 3 + 1 );
+    }
 }
 
 abstract class ReturnCarBehavior extends Behavior {
     public ReturnCarBehavior(Customer customer) {
         super(customer);
     }
-    public abstract void returnCars(Shop shop);
+    public abstract void returnCar(Shop shop, Car car);
 }
 
 // Concrete Behaviors
@@ -57,7 +64,10 @@ class UniversalReturnCar extends ReturnCarBehavior {
     public UniversalReturnCar(Customer customer) {
         super(customer);
     }
-    public void returnCars(Shop shop) {
-        // Return all cars that have 0 days left
+    public void returnCar(Shop shop, Car car) {
+        int i_rm = customer.rented_cars.indexOf(car);
+        customer.rented_cars.remove(car);
+        customer.days_left.remove(i_rm);
+        shop.release(car);
     }
 }
