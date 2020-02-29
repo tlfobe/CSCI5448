@@ -1,4 +1,3 @@
-import Cars.*;
 import java.util.Arrays;
 import java.util.ArrayList;
 import java.util.List;
@@ -13,7 +12,9 @@ public interface Pool {
     void shutdown();
 }
 
-public abstract class CarPool extends CarFactory implements Pool {
+
+
+public class CarPool extends CarFactory implements Pool {
     private int size;
     private boolean shutdown;
     private BlockingQueue objects;
@@ -76,20 +77,58 @@ public abstract class CarPool extends CarFactory implements Pool {
     }
 }
 
-public class Shop extends CarPool{
-    CarPool carpool;
-
-    public Shop() {
-        // generate the list of cars that the shop has available as an object pool (blocking queue)
-        carpool = new CarPool(25);
-    }
-
-
-    public publish() {
-        // publish the following data
-        // 
-    }
+interface Subject {
+    public void attach(Observer o);
+    public void detach(Observer o);
+    public void notifyObs();
+    public List<Observer> observers = new LinkedList<Observer>();
 }
+
+
+public class Shop implements Subject{
+    private CarPool carpool;
+    private List<> observers = new List<T>();
+    public int state;
+
+
+    public Shop(int num_cars) {
+        // generate the list of cars that the shop has available as an object pool (blocking queue)
+        carpool = new CarPool(num_cars);
+        this.state = num_cars;
+    }
+
+    public Car get() {
+        carpool.get();
+    }
+
+    public void release(Car c) {
+        carpool.release(c);
+    }
+
+
+    public int getState() {
+        return this.state;
+    }
+
+
+    public void setState() {
+        // notify all observers
+        this.state = this.size();
+        notifyAllObservers();
+    }
+
+    public void attach(T observer) {
+        observers.add(observer);
+    }
+
+    public void notifyAllObservers() {
+        for (T obs : observers){
+            obs.update();
+        }
+    }
+
+}
+
 
 
 
