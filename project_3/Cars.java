@@ -1,70 +1,84 @@
-public interface Car {  
-    public String licensePlate;
-    public float get_cost();
-    public boolean rented();
-    
+abstract class Car{
+    public String licensePlate = "temp";
+    private float base_cost;    
+    private float cost;
+
+    public void sentBack() {
+        cost = base_cost;
+    }
+
+    public void setCost(int n){
+        cost = n*base_cost;
+    }
+
+    public float cost() {
+        return cost;
+    }
 }
 
 class EconomyCar implements Car {
-    private float cost = 100.0;
-
+    
+    
     public EconomyCar(String plate){
+        base_cost = 100.0f;
         licensePlate = plate;
     }
 
-    public float get_cost() {
+    public float cost() {
         return cost;
     }
 }
 
 class StandardCar implements Car {
-    private float cost = 100.0;
 
     public StandaradCar(String plate) {
+        base_cost = 100.0f;
         licensePlate = plate;
     }
 
-    public float get_cost() {
+    public float cost() {
         return cost;
     }
 }
 
 class LuxuryCar implements Car {
-    private float cost = 200.0;
+    
 
     public LuxuryCar(String plate) {
+        base_cost = 200.0f;
         licensePlate = plate;
     }
 
-    public float get_cost() {
+    public float cost() {
         return cost;
     }
 }
 
 class SUVCar implements Car {
-    private float cost = 150.0;
+    
 
     public SUVCar(String plate) {
+        base_cost = 150.0f;
         licensePlate = plate;
     }
 
-    public float get_cost() {
+    public float cost() {
         return cost;
     }
 }
 
 class MinivanCar implements Car {
-    private float cost = 200.0;
+    
 
     public MinivanCar(String plate) {
+        base_cost = 200.0f;
         licensePlate = plate;
     }
 
-    public float get_cost() {
+    public float cost() {
         return cost;
     }
 }
-
 
 public class CarFactor {
     private String generatePlate() {
@@ -107,17 +121,3 @@ public class CarFactor {
 }
 
 
-// /*
-// in shop:
-
-
-
-// if(wantsGPS):
-//     rentalCar = GPS(rentalCar)
-// for childseat in num_childSeats:
-//     rentalCar = childSeat(rentalCar)
-
-
-
-
-// */
