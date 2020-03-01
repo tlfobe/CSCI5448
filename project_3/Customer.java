@@ -11,7 +11,7 @@ abstract class Customer implements Observer {
 
     protected RentCarBehavior rent_car_behavior;
     protected ReturnCarBehavior return_car_behavior;
-    protected List< Car > rented_cars;
+    protected List< Car > rented_cars = new LinkedList<Car>();
     protected List< Integer > days_left;
     protected Shop subject;
     protected boolean is_viable;

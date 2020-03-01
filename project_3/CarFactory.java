@@ -1,7 +1,11 @@
 abstract class Car{
-    public String licensePlate = "temp";
+    public String licensePlate;
     protected float base_cost;    
     protected float cost;
+
+    public Car(String plate) {
+        licensePlate = plate;
+    }
 
     public void sentBack() {
         cost = base_cost;
@@ -20,8 +24,8 @@ class EconomyCar extends Car {
     
     
     public EconomyCar(String plate){
+        super(plate);
         base_cost = 100.0f;
-        licensePlate = plate;
     }
 
     public float cost() {
@@ -31,9 +35,9 @@ class EconomyCar extends Car {
 
 class StandardCar extends Car {
 
-    public StandaradCar(String plate) {
+    public StandardCar(String plate) {
+        super(plate);
         base_cost = 100.0f;
-        licensePlate = plate;
     }
 
     public float cost() {
@@ -45,8 +49,8 @@ class LuxuryCar extends Car {
     
 
     public LuxuryCar(String plate) {
+        super(plate);
         base_cost = 200.0f;
-        licensePlate = plate;
     }
 
     public float cost() {
@@ -58,8 +62,8 @@ class SUVCar extends Car {
     
 
     public SUVCar(String plate) {
+        super(plate);
         base_cost = 150.0f;
-        licensePlate = plate;
     }
 
     public float cost() {
@@ -71,8 +75,8 @@ class MinivanCar extends Car {
     
 
     public MinivanCar(String plate) {
+        super(plate);
         base_cost = 200.0f;
-        licensePlate = plate;
     }
 
     public float cost() {
@@ -80,7 +84,7 @@ class MinivanCar extends Car {
     }
 }
 
-public class CarFactor {
+public class CarFactory {
     private String generatePlate() {
         String p = "";
         int n = 'Z' - 'A' + 1;

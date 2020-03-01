@@ -22,7 +22,7 @@ class GPS extends CarDecorator {
         float cost = this.car.cost();
         if (this.car instanceof EconomyCar) {
             cost += 5.0f; // Adjust costs here!
-        } else if (this.car instanceof StandaradCar || this.car instanceof MinivanCar ) {
+        } else if (this.car instanceof StandardCar || this.car instanceof MinivanCar ) {
             cost += 10.0f;
         } else if (this.car instanceof LuxuryCar || this.car instanceof SUVCar) {
             cost += 25.0f;
@@ -40,7 +40,7 @@ class SateliteRadio extends CarDecorator {
         float cost = this.car.cost();
         if (this.car instanceof EconomyCar) {
             cost += 15.0f; // Adjust costs here!
-        } else if (this.car instanceof StandaradCar || this.car instanceof MinivanCar ) {
+        } else if (this.car instanceof StandardCar || this.car instanceof MinivanCar ) {
             cost += 30.0f;
         } else if (this.car instanceof LuxuryCar || this.car instanceof SUVCar) {
             cost += 45.0f;
@@ -58,7 +58,7 @@ class CarSeat extends CarDecorator {
         float cost = this.car.cost();
         if (this.car instanceof EconomyCar) {
             cost += 2.5f; // Adjust costs here!
-        } else if (this.car instanceof StandaradCar || this.car instanceof MinivanCar ) {
+        } else if (this.car instanceof StandardCar || this.car instanceof MinivanCar ) {
             cost += 5.0f;
         } else if (this.car instanceof LuxuryCar || this.car instanceof SUVCar) {
             cost += 10.0f;

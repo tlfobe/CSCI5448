@@ -2,22 +2,21 @@ import java.util.Arrays;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.BlockingQueue;
+import java.util.concurrent.LinkedBlockingQueue;
 
 // object pool
 
 
-public interface Pool {
-    Car get();
+interface Pool {
+    Car get(int n_nights);
     void release(Car object);
     void shutdown();
 }
 
-
-
-public class CarPool extends CarFactory implements Pool {
+class CarPool extends CarFactory implements Pool {
     private int size;
     private boolean shutdown;
-    private BlockingQueue objects;
+    private BlockingQueue<Car> objects;
     private List<String> l = new ArrayList<>(
         Arrays.asList(
             "Economy", "StandardCar",
@@ -31,8 +30,10 @@ public class CarPool extends CarFactory implements Pool {
         init();
     }
 
+    
+
     private void init() {
-        objects = new LinkedBlockingQueue();
+        objects = new LinkedBlockingQueue<Car>();
         for (int i = 0; i < size; i ++) {
             objects.add(getCar(l.get(i % l.size())));
         }
@@ -57,18 +58,16 @@ public class CarPool extends CarFactory implements Pool {
         }
     }
 
-    @Override
     public void release(Car c) {
         try {
             c.sentBack();
-            objects.take(c);
+            objects.offer(c);
         } catch (Exception e) {
             e.printStackTrace();
         }
 
     }
 
-    @Override
     public void shutdown() {
         objects.clear();
         shutdown = true;
@@ -82,14 +81,13 @@ public class CarPool extends CarFactory implements Pool {
 interface Subject {
     public void attach(Observer o);
     public void detach(Observer o);
-    public void notifyObs();
-    public List<Observer> observers = new LinkedList<Observer>();
+    public void notifyAllObservers();
 }
 
 
 public class Shop implements Subject{
     private CarPool carpool;
-    private List<> observers = new List<T>();
+    private List<Observer> observers = new ArrayList<Observer>();
     public int state;
     private float daily_total = 0.0f;
     private List<Float> cash_flow;
@@ -111,13 +109,13 @@ public class Shop implements Subject{
     public void collectPayment(float money) {
         daily_total += money;
     }
-    
+
     public int size() {
         return carpool.size();
     }
 
-    public Car get() {
-        carpool.get();
+    public Car get(int n_nights) {
+        return carpool.get(n_nights);
     }
 
     public void release(Car c) {
@@ -136,12 +134,16 @@ public class Shop implements Subject{
         notifyAllObservers();
     }
 
-    public void attach(T observer) {
+    public void detach() {
+        this.observers.remove(o)
+    }
+
+    public void attach(Observer observer) {
         observers.add(observer);
     }
 
     public void notifyAllObservers() {
-        for (T obs : observers){
+        for (Observer obs : observers){
             obs.update();
         }
     }
