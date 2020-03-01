@@ -12,9 +12,9 @@ abstract class Customer implements Observer {
     protected RentCarBehavior rent_car_behavior;
     protected ReturnCarBehavior return_car_behavior;
     protected List< Car > rented_cars = new LinkedList<Car>();
-    protected List< Integer > days_left;
+    protected List< Integer > days_left = new LinkedList< Integer >();
     protected Shop subject;
-    protected boolean is_viable;
+    protected boolean is_viable = true;
 
     abstract protected void updateViable(int n_cars_available);
 
@@ -25,7 +25,7 @@ abstract class Customer implements Observer {
         this.subject = shop;
     }
 
-    public void rentCar( Shop shop ) {
+    public void rentCars( Shop shop ) {
         rent_car_behavior.rentCars(shop);
     }
 

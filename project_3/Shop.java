@@ -110,6 +110,10 @@ public class Shop implements Subject{
         daily_total += money;
     }
 
+    public float getDailyTotal() {
+        return daily_total;
+    }
+
     public int size() {
         return carpool.size();
     }
@@ -134,8 +138,8 @@ public class Shop implements Subject{
         notifyAllObservers();
     }
 
-    public void detach() {
-        this.observers.remove(o)
+    public void detach(Observer o) {
+        this.observers.remove(o);
     }
 
     public void attach(Observer observer) {
