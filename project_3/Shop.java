@@ -40,11 +40,12 @@ public class CarPool extends CarFactory implements Pool {
     }
 
     @Override
-    public Car get() {
+    public Car get(int n_nights) {
         if(!shutdown) {
             Car t = null;
             try {
                 t = objects.take();
+                t.setCost(n_nights);
             } catch (Exception e) {
                 e.printStackTrace();
             }
@@ -59,6 +60,7 @@ public class CarPool extends CarFactory implements Pool {
     @Override
     public void release(Car c) {
         try {
+            c.sentBack();
             objects.take(c);
         } catch (Exception e) {
             e.printStackTrace();
@@ -89,12 +91,28 @@ public class Shop implements Subject{
     private CarPool carpool;
     private List<> observers = new List<T>();
     public int state;
+    private float daily_total = 0.0f;
+    private List<Float> cash_flow;
 
 
     public Shop(int num_cars) {
         // generate the list of cars that the shop has available as an object pool (blocking queue)
         carpool = new CarPool(num_cars);
         this.state = num_cars;
+        cash_flow = new ArrayList<Float>();
+
+    }
+
+    public void resetDay() {
+        cash_flow.add(daily_total);
+        daily_total = 0.0f;
+    }
+
+    public void collectPayment(float money) {
+        daily_total += money;
+    }
+    public int size() {
+        return carpool.size();
     }
 
     public Car get() {
