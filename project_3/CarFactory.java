@@ -18,6 +18,10 @@ abstract class Car{
     public float cost() {
         return cost;
     }
+
+    protected Car getBase() {
+        return this;
+    }
 }
 
 class EconomyCar extends Car {

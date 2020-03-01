@@ -40,6 +40,12 @@ abstract class RentCarBehavior extends Behavior {
             }
             customer.rented_cars.add(car);
             customer.days_left.add(n_nights);
+
+            System.out.println("CarType: " + car.getBase().getClass().getSimpleName());
+            System.out.println("GPS: " + String.valueOf(wantGPS));
+            System.out.println("Satelite Radio: " + String.valueOf(wantSateliteRadio));
+            System.out.println("Car Seats: " + String.valueOf(carSeats));
+
             shop.collectPayment(car.cost());
         }
     }
