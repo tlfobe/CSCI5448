@@ -1,7 +1,7 @@
 abstract class Car{
     public String licensePlate = "temp";
-    private float base_cost;    
-    private float cost;
+    protected float base_cost;    
+    protected float cost;
 
     public void sentBack() {
         cost = base_cost;
@@ -16,7 +16,7 @@ abstract class Car{
     }
 }
 
-class EconomyCar implements Car {
+class EconomyCar extends Car {
     
     
     public EconomyCar(String plate){
@@ -29,7 +29,7 @@ class EconomyCar implements Car {
     }
 }
 
-class StandardCar implements Car {
+class StandardCar extends Car {
 
     public StandaradCar(String plate) {
         base_cost = 100.0f;
@@ -41,7 +41,7 @@ class StandardCar implements Car {
     }
 }
 
-class LuxuryCar implements Car {
+class LuxuryCar extends Car {
     
 
     public LuxuryCar(String plate) {
@@ -54,7 +54,7 @@ class LuxuryCar implements Car {
     }
 }
 
-class SUVCar implements Car {
+class SUVCar extends Car {
     
 
     public SUVCar(String plate) {
@@ -67,7 +67,7 @@ class SUVCar implements Car {
     }
 }
 
-class MinivanCar implements Car {
+class MinivanCar extends Car {
     
 
     public MinivanCar(String plate) {

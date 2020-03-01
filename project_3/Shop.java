@@ -111,6 +111,7 @@ public class Shop implements Subject{
     public void collectPayment(float money) {
         daily_total += money;
     }
+    
     public int size() {
         return carpool.size();
     }
