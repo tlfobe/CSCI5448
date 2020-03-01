@@ -27,7 +27,7 @@ abstract class RentCarBehavior extends Behavior {
 
     protected void generalRentCars(Shop shop, int n_cars, int n_nights) {
         for (int i = 0; i < n_cars; i++) {
-            Car car = shop.get();
+            Car car = shop.get(n_nights);
             setPrefences(shop); // gives different preferences per car
             if (wantGPS == true) {
                 car = new GPS(car);
@@ -40,6 +40,7 @@ abstract class RentCarBehavior extends Behavior {
             }
             customer.rented_cars.add(car);
             customer.days_left.add(n_nights);
+            shop.collectPayment(car.cost());
         }
     }
 }
@@ -87,7 +88,8 @@ class RegularRentCar extends RentCarBehavior {
         // should probably implement a check to make
         //  sure we don't pull from an empty shop
         int n_nights = new Random().nextInt(2 + 1) + 3;
-        int n_cars = new Random().nextInt(2 + 1) + 1;
+        int range_cars = min(shop.size(), 3) - 1;
+        int n_cars = new Random().nextInt(range_cars + 1) + 1;
         generalRentCars(shop, n_cars, n_nights);
     }
 }

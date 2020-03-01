@@ -1,8 +1,15 @@
-abstract class CarDecorator implements Car {
+abstract class CarDecorator extends Car {
     protected Car car;
     public CarDecorator(Car car) {
-        super(car.plate);
+        super(car.licensePlate);
         this.car = car;
+    }
+    protected Car getBase() {
+        if (this instanceof CarDecorator) {
+            return this.getBase();
+        } else {
+            return this.car;
+        }
     }
 }
 
