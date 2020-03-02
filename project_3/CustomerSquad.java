@@ -5,6 +5,8 @@ import java.util.Random;
 public class CustomerSquad {
     CustomerFactory fact;
     Shop shop;
+    float fullTotal = 0.0f;
+    int number_of_rentals = 0;
     List<Customer> customers = new ArrayList<Customer>();
 
     public CustomerSquad(Shop shop, int number_customers) {
@@ -46,7 +48,7 @@ public class CustomerSquad {
             if(new Random().nextFloat() > 0.5f && c.getViable()) {
                 // System.out.println(c.name + " is renting a car.");
                 System.out.println(c.name + ", is a " + c.getClass().getSimpleName() + ", rents the following car(s): ");
-                c.rentCars(shop);
+                number_of_rentals += c.rentCars(shop);
                 System.out.println();
                 shop.setState();
             }
@@ -54,7 +56,9 @@ public class CustomerSquad {
         
         // night cycle
         for(Customer c : customers) {c.endDay();}
-        System.out.println("Daily Total: " + shop.getDailyTotal());
+        float dailyTotal = shop.getDailyTotal();
+        fullTotal += dailyTotal;
+        System.out.println("Daily Total: " + dailyTotal);
         shop.resetDay();
     }
 

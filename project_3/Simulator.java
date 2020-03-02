@@ -12,7 +12,9 @@ public class Simulator {
             lennyYash.setState();
         }
         System.out.println("----------------------------------------");
-
+        
+        System.out.println("Total amount made: $" + squad.fullTotal);
+        System.out.println("Total number of rentals made: " + squad.number_of_rentals);
 
     }
 }
