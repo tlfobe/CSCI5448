@@ -1,11 +1,12 @@
+
 public class CustomerFactory {
     Shop shop;
-    String name = "tmp";
+    
     public CustomerFactory(Shop shop) {
         this.shop = shop;
     }
 
-    public Customer createCustomer(int type) {
+    public Customer createCustomer(int type, String name) {
         if(type == 0){
             return new CasualCustomer(name, shop);
         }

@@ -8,12 +8,17 @@ public class CustomerSquad {
     List<Customer> customers = new ArrayList<Customer>();
 
     public CustomerSquad(Shop shop, int number_customers) {
+        String[] names = new String[] {
+            "Laura", "Liam", "Yash", 
+            "Lenny", "Chandler", "Jim",
+            "Phoebe", "Ross", "Rachel", 
+            "Joey", "Monica", "Marcel"};
         this.shop = shop;
         fact = new CustomerFactory(this.shop);
 
         for(int i = 0; i<number_customers; i++) {
             int n = new Random().nextInt(3);
-            Customer t = fact.createCustomer(n);
+            Customer t = fact.createCustomer(n, names[i]);
             shop.attach(t);
             customers.add(t);    
         }
@@ -21,21 +26,24 @@ public class CustomerSquad {
 
     public void runDay() {
         // day cycle
-        System.out.println("Beginning of day lot size: " + shop.size());
         for(Customer c : customers) {
+            if(c.rented_cars.size() > 0) {
+                System.out.println(c.name + " currently has: ");
+                for(Car rented : c.rented_cars) {
+                    System.out.print(rented.licensePlate + " \t ");
+                }
+                System.out.println(); System.out.println();
+            }
             if(new Random().nextFloat() > 0.5f && c.getViable()) {
+                // System.out.println(c.name + " is renting a car.");
                 c.rentCars(shop);
                 shop.setState();
             }
         }
-
-        System.out.println("Before rented: " + shop.size());
-
         
         // night cycle
         for(Customer c : customers) {c.endDay();}
         System.out.println("Daily Total: " + shop.getDailyTotal());
-        System.out.println("End of day lot size: " + shop.size());
         shop.resetDay();
     }
 

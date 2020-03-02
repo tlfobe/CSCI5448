@@ -1,6 +1,8 @@
 import java.util.Arrays;
+import java.util.Iterator;
 import java.util.ArrayList;
 import java.util.List;
+
 import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.LinkedBlockingQueue;
 
@@ -30,7 +32,6 @@ class CarPool extends CarFactory implements Pool {
         init();
     }
 
-    
 
     private void init() {
         objects = new LinkedBlockingQueue<Car>();
@@ -38,6 +39,10 @@ class CarPool extends CarFactory implements Pool {
             objects.add(getCar(l.get(i % l.size())));
         }
 
+    }
+
+    public Iterator<Car> getList() {
+        return objects.iterator(); 
     }
 
     @Override
@@ -110,6 +115,30 @@ public class Shop implements Subject{
         daily_total += money;
     }
 
+    public void listRemainingCars() {
+        Iterator<Car> it = carpool.getList();
+
+        int n = carpool.size();
+        System.out.println("Remaining Cars at the beginning of the day: " + n);
+
+        System.out.print("Cars left: ");
+        while (it.hasNext()) {
+            n --;
+            Car c = it.next();
+            if(n > 0) {
+                System.out.print(c.licensePlate + ", ");
+            }
+            else {System.out.print(c.licensePlate); }
+        }
+        System.out.println();
+
+
+
+
+
+
+    } 
+
     public float getDailyTotal() {
         return daily_total;
     }
@@ -126,11 +155,9 @@ public class Shop implements Subject{
         carpool.release(c);
     }
 
-
     public int getState() {
         return this.state;
     }
-
 
     public void setState() {
         // notify all observers

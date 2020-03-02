@@ -6,21 +6,14 @@ public class Simulator {
         for(int i=0; i < 36; i++) {
             System.out.println("----------------------------------------");
             System.out.println("Day: " + i);
+            lennyYash.listRemainingCars();
+            System.out.println();
             squad.runDay();
             lennyYash.setState();
-
-            
-
-
-
-
-
-
-
-
-
         }
         System.out.println("----------------------------------------");
+
+        System.out.println(" ######  FINAL OUTPUT   ###### ");
 
 
     }
