@@ -20,11 +20,11 @@ class GPS extends CarDecorator {
 
     public float cost() {
         float cost = this.car.cost();
-        if (this.car instanceof EconomyCar) {
+        if (this.car.getBase() instanceof EconomyCar) {
             cost += 5.0f; // Adjust costs here!
-        } else if (this.car instanceof StandardCar || this.car instanceof MinivanCar ) {
+        } else if (this.car.getBase() instanceof StandardCar || this.car.getBase() instanceof MinivanCar ) {
             cost += 10.0f;
-        } else if (this.car instanceof LuxuryCar || this.car instanceof SUVCar) {
+        } else if (this.car.getBase() instanceof LuxuryCar || this.car.getBase() instanceof SUVCar) {
             cost += 25.0f;
         }
         return cost;
@@ -38,11 +38,11 @@ class SateliteRadio extends CarDecorator {
 
     public float cost() {
         float cost = this.car.cost();
-        if (this.car instanceof EconomyCar) {
+        if (this.car.getBase() instanceof EconomyCar) {
             cost += 15.0f; // Adjust costs here!
-        } else if (this.car instanceof StandardCar || this.car instanceof MinivanCar ) {
+        } else if (this.car.getBase() instanceof StandardCar || this.car.getBase() instanceof MinivanCar ) {
             cost += 30.0f;
-        } else if (this.car instanceof LuxuryCar || this.car instanceof SUVCar) {
+        } else if (this.car.getBase() instanceof LuxuryCar || this.car.getBase() instanceof SUVCar) {
             cost += 45.0f;
         }
         return cost;
@@ -56,11 +56,11 @@ class CarSeat extends CarDecorator {
 
     public float cost() {
         float cost = this.car.cost();
-        if (this.car instanceof EconomyCar) {
+        if (this.car.getBase() instanceof EconomyCar) {
             cost += 2.5f; // Adjust costs here!
-        } else if (this.car instanceof StandardCar || this.car instanceof MinivanCar ) {
+        } else if (this.car.getBase() instanceof StandardCar || this.car.getBase() instanceof MinivanCar ) {
             cost += 5.0f;
-        } else if (this.car instanceof LuxuryCar || this.car instanceof SUVCar) {
+        } else if (this.car.getBase() instanceof LuxuryCar || this.car.getBase() instanceof SUVCar) {
             cost += 10.0f;
         }
         return cost;
