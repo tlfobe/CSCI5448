@@ -30,6 +30,7 @@ class EconomyCar extends Car {
     public EconomyCar(String plate){
         super(plate);
         base_cost = 100.0f;
+        cost = base_cost;
     }
 
     public float cost() {
@@ -42,6 +43,7 @@ class StandardCar extends Car {
     public StandardCar(String plate) {
         super(plate);
         base_cost = 100.0f;
+        cost = base_cost;
     }
 
     public float cost() {
@@ -55,6 +57,7 @@ class LuxuryCar extends Car {
     public LuxuryCar(String plate) {
         super(plate);
         base_cost = 200.0f;
+        cost = base_cost;
     }
 
     public float cost() {
@@ -68,6 +71,7 @@ class SUVCar extends Car {
     public SUVCar(String plate) {
         super(plate);
         base_cost = 150.0f;
+        cost = base_cost;
     }
 
     public float cost() {
@@ -81,6 +85,7 @@ class MinivanCar extends Car {
     public MinivanCar(String plate) {
         super(plate);
         base_cost = 200.0f;
+        cost = base_cost;
     }
 
     public float cost() {
