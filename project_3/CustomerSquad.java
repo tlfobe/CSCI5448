@@ -58,7 +58,7 @@ public class CustomerSquad {
                                   "GPS",
                                   "Satellite",
                                   "CarSeats",
-                                  "Price") ;
+                                  "Price");
                 System.out.println("----------------------------------------------------");
                 int customer_rents = c.rentCars(shop);
                 rents += customer_rents;
