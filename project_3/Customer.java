@@ -25,8 +25,9 @@ abstract class Customer implements Observer {
         this.subject = shop;
     }
 
-    public void rentCars( Shop shop ) {
-        rent_car_behavior.rentCars(shop);
+    public int rentCars( Shop shop ) {
+        int n_cars = rent_car_behavior.rentCars(shop);
+        return n_cars;
     }
 
     public void returnCar( Shop shop, Car car) {

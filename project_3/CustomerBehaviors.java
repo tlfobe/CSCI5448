@@ -23,9 +23,9 @@ abstract class RentCarBehavior extends Behavior {
         carSeats = new Random().nextInt( 3 + 1 );
     }
 
-    abstract void rentCars(Shop shop);
+    abstract int rentCars(Shop shop);
 
-    protected void generalRentCars(Shop shop, int n_cars, int n_nights) {
+    protected void  generalRentCars(Shop shop, int n_cars, int n_nights) {
         for (int i = 0; i < n_cars; i++) {
             Car car = shop.get(n_nights);
             setPrefences(shop); // gives different preferences per car
@@ -64,12 +64,13 @@ class CasualRentCar extends RentCarBehavior {
     public CasualRentCar(Customer customer) {
         super(customer);
     }
-    public void rentCars(Shop shop) {
+    public int rentCars(Shop shop) {
         // Rent 1 car
         // For 1 to 3 nights
         int n_nights = new Random().nextInt(2 + 1) + 1;
         int n_cars = 1;
         generalRentCars(shop, n_cars, n_nights);
+        return n_cars;
     }
 }
 
@@ -77,10 +78,11 @@ class BusinessRentCar extends RentCarBehavior {
     public BusinessRentCar(Customer customer) {
         super(customer);
     }
-    public void rentCars(Shop shop) {
+    public int rentCars(Shop shop) {
         int n_nights = 7;
         int n_cars = 3;
         generalRentCars(shop, n_cars, n_nights);
+        return n_cars;
     }
 }
 
@@ -88,7 +90,7 @@ class RegularRentCar extends RentCarBehavior {
     public RegularRentCar(Customer customer) {
         super(customer);
     }
-    public void rentCars(Shop shop) {
+    public int rentCars(Shop shop) {
         // Rent 1 to 3
         // for 3 to 5 nights
         // should probably implement a check to make
@@ -97,6 +99,7 @@ class RegularRentCar extends RentCarBehavior {
         int range_cars = Math.min(shop.size(), 3) - 1;
         int n_cars = new Random().nextInt(range_cars + 1) + 1;
         generalRentCars(shop, n_cars, n_nights);
+        return n_cars;
     }
 }
 
