@@ -50,6 +50,7 @@ abstract class RentCarBehavior extends Behavior {
                                 String.valueOf(wantSateliteRadio),
                                 String.valueOf(carSeats),
                                 car.cost());
+            // System.out.println("Base Value: " + String.valueOf(car.getBase().base_cost));
             // System.out.print(car.licensePlate + " ");
             // System.out.print(car.getBase().getClass().getSimpleName() + " ");
             // System.out.print(String.valueOf(wantGPS)+ " ");
@@ -126,6 +127,6 @@ class UniversalReturnCar extends ReturnCarBehavior {
         int i_rm = customer.rented_cars.indexOf(car);
         customer.rented_cars.remove(car);
         customer.days_left.remove(i_rm);
-        shop.release(car);
+        shop.release(car.getBase());
     }
 }
