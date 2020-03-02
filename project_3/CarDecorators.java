@@ -6,7 +6,7 @@ abstract class CarDecorator extends Car {
     }
     protected Car getBase() {
         if (this instanceof CarDecorator) {
-            return this.getBase();
+            return this.car.getBase();
         } else {
             return this.car;
         }
