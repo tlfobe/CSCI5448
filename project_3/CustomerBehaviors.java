@@ -41,13 +41,25 @@ abstract class RentCarBehavior extends Behavior {
             }
             customer.rented_cars.add(car);
             customer.days_left.add(n_nights);
+            
 
-            System.out.println("CarType: " + car.getBase().getClass().getSimpleName());
-            System.out.println("GPS: " + String.valueOf(wantGPS));
-            System.out.println("Satelite Radio: " + String.valueOf(wantSateliteRadio));
-            System.out.println("Car Seats: " + String.valueOf(carSeats));
+            System.out.printf("%-8s %-11s %-5s %-13s %-8s $%-10.2f\n",
+                                car.licensePlate,
+                                car.getBase().getClass().getSimpleName(),
+                                String.valueOf(wantGPS),
+                                String.valueOf(wantSateliteRadio),
+                                String.valueOf(carSeats),
+                                car.cost());
+            // System.out.print(car.licensePlate + " ");
+            // System.out.print(car.getBase().getClass().getSimpleName() + " ");
+            // System.out.print(String.valueOf(wantGPS)+ " ");
+            // System.out.print(String.valueOf(wantSateliteRadio)+ " ");
+            // System.out.print(String.valueOf(carSeats)+ " ");
+            // System.out.println("$"+String.valueOf(car.cost()));
             payment += car.cost();
         }
+        System.out.println();
+        System.out.println("Rental Duration: " + String.valueOf(n_nights) + " Days");
         System.out.println("Rental Total Cost: $" + String.valueOf(payment));
         shop.collectPayment(payment);
     }

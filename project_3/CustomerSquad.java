@@ -51,7 +51,15 @@ public class CustomerSquad {
         for(Customer c : customers) {
             if(new Random().nextFloat() > 0.5f && c.getViable()) {
                 // System.out.println(c.name + " is renting a car.");
-                System.out.println(c.name + ", is a " + c.getClass().getSimpleName() + ", rents the following car(s): ");
+                System.out.println(c.name + "'s Rental Receipt (" + c.getClass().getSimpleName() + "):");
+                System.out.printf("%-8s %-11s %-5s %-13s %-8s %-10s\n",
+                                  "CarPlate",
+                                  "CarType",
+                                  "GPS",
+                                  "Satellite",
+                                  "CarSeats",
+                                  "Price") ;
+                System.out.println("----------------------------------------------------");
                 int customer_rents = c.rentCars(shop);
                 rents += customer_rents;
                 if(c.getClass().getSimpleName().equals("BusinessCustomer")) {
