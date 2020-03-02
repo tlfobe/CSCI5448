@@ -59,7 +59,7 @@ public class CustomerSquad {
                                   "Satellite",
                                   "CarSeats",
                                   "Price");
-                System.out.println("----------------------------------------------------");
+                System.out.println("-------------------------------------------------------");
                 int customer_rents = c.rentCars(shop);
                 rents += customer_rents;
                 if(c.getClass().getSimpleName().equals("BusinessCustomer")) {
