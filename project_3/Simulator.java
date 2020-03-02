@@ -14,7 +14,10 @@ public class Simulator {
         System.out.println("----------------------------------------");
         
         System.out.println("Total amount made: $" + squad.fullTotal);
-        System.out.println("Total number of rentals made: " + squad.number_of_rentals);
+        System.out.println("Total number of rentals made: " + squad.rents);
+        System.out.println("Total number of Business rentals made: " + squad.business_rents);
+        System.out.println("Total number of Casual rentals made: " + squad.casual_rents);
+        System.out.println("Total number of Regular rentals made: " + squad.regular_rents);
 
     }
 }
