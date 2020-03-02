@@ -5,3 +5,9 @@ Team:
 * Lenny Fobe
 
 Langauge: Java
+
+
+
+
+## UML Class Diagram
+![UML Class Diagram](UML/CarRentalUML.png)
