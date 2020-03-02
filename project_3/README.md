@@ -25,7 +25,7 @@ java Simulator
 
 ## UML Class Diagram
 
-Bellow is the UML Class Diagram of car rental simulation. Note worthy design patterns include:
+Bellow is the UML Class Diagram of the car rental simulation. Note worthy design patterns include:
 - Shop uses a CarPool (ObjectPool) to keep track of which cars are still in the shop
 - The CarPool uses a CarFactory (SimpleFactory) to populate its Pool with specific Car objects (StandardCar, EconomyCar, LuxuryCar. etc.).
 - Add-ons to cars, like GPS, SateliteRadios and CarSeats, are implemented as CarDecorators.
