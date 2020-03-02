@@ -25,18 +25,26 @@ public class CustomerSquad {
     }
 
     public void runDay() {
-        // day cycle
-        for(Customer c : customers) {
+
+        System.out.println(" # # # Current Rental Situation # # # ");
+        for(Customer c: customers) {
             if(c.rented_cars.size() > 0) {
                 System.out.println(c.name + " currently has: ");
+                System.out.print(" \t ");
                 for(Car rented : c.rented_cars) {
                     System.out.print(rented.licensePlate + " \t ");
                 }
                 System.out.println(); System.out.println();
             }
+        }
+
+        // day cycle (renting cars)
+        for(Customer c : customers) {
             if(new Random().nextFloat() > 0.5f && c.getViable()) {
                 // System.out.println(c.name + " is renting a car.");
+                System.out.println(c.name + " rents the following car(s): ");
                 c.rentCars(shop);
+                System.out.println();
                 shop.setState();
             }
         }
