@@ -1,0 +1,2601 @@
+----------------------------------------
+Day: 0
+Remaining Cars at the beginning of the day: 24
+Cars left: PEP213, VWI702, LUM573, FQK762, CAN597, XLY048, OCW805, RGW802, MWM654, HRS483, ZXR660, IYS297, PCZ106, JOV368, ZCU130, ZBP122, UFF974, LJR299, YFX513, NSN451, YPS310, KXQ659, SUK006, LNW723
+
+ # # # Current Rental Situation # # # 
+Number of cars out for rental: 0 
+ 
+ # # # Rents for the Day # # # 
+Yash's Rental Receipt (CasualCustomer):
+CarPlate CarType     GPS   Satellite     CarSeats Price     
+----------------------------------------------------
+PEP213   EconomyCar  true  false         1        $305.00    
+
+Rental Duration: 3 Days
+Rental Total Cost: $305.0
+
+Ross's Rental Receipt (CasualCustomer):
+CarPlate CarType     GPS   Satellite     CarSeats Price     
+----------------------------------------------------
+VWI702   StandardCar false true          2        $130.00    
+
+Rental Duration: 1 Days
+Rental Total Cost: $130.0
+
+Rachel's Rental Receipt (RegularCustomer):
+CarPlate CarType     GPS   Satellite     CarSeats Price     
+----------------------------------------------------
+2
+LUM573   LuxuryCar   true  false         1        $1025.00   
+FQK762   SUVCar      false true          0        $795.00    
+CAN597   MinivanCar  true  true          2        $1010.00   
+
+Rental Duration: 5 Days
+Rental Total Cost: $2830.0
+
+Joey's Rental Receipt (CasualCustomer):
+CarPlate CarType     GPS   Satellite     CarSeats Price     
+----------------------------------------------------
+XLY048   EconomyCar  true  false         0        $105.00    
+
+Rental Duration: 1 Days
+Rental Total Cost: $105.0
+
+Monica's Rental Receipt (CasualCustomer):
+CarPlate CarType     GPS   Satellite     CarSeats Price     
+----------------------------------------------------
+OCW805   StandardCar true  false         0        $210.00    
+
+Rental Duration: 2 Days
+Rental Total Cost: $210.0
+
+Daily Total: 3580.0
+----------------------------------------
+Day: 1
+Remaining Cars at the beginning of the day: 19
+Cars left: RGW802, MWM654, HRS483, ZXR660, IYS297, PCZ106, JOV368, ZCU130, ZBP122, UFF974, LJR299, YFX513, NSN451, YPS310, KXQ659, SUK006, LNW723, VWI702, XLY048
+
+ # # # Current Rental Situation # # # 
+Yash currently has: 
+PEP213, 
+
+Rachel currently has: 
+LUM573, FQK762, CAN597, 
+
+Monica currently has: 
+OCW805, 
+
+Number of cars out for rental: 5 
+ 
+ # # # Rents for the Day # # # 
+Laura's Rental Receipt (CasualCustomer):
+CarPlate CarType     GPS   Satellite     CarSeats Price     
+----------------------------------------------------
+RGW802   LuxuryCar   true  true          2        $625.00    
+
+Rental Duration: 3 Days
+Rental Total Cost: $625.0
+
+Marcel's Rental Receipt (CasualCustomer):
+CarPlate CarType     GPS   Satellite     CarSeats Price     
+----------------------------------------------------
+MWM654   SUVCar      true  false         2        $175.00    
+
+Rental Duration: 1 Days
+Rental Total Cost: $175.0
+
+Daily Total: 800.0
+----------------------------------------
+Day: 2
+Remaining Cars at the beginning of the day: 19
+Cars left: HRS483, ZXR660, IYS297, PCZ106, JOV368, ZCU130, ZBP122, UFF974, LJR299, YFX513, NSN451, YPS310, KXQ659, SUK006, LNW723, VWI702, XLY048, OCW805, MWM654
+
+ # # # Current Rental Situation # # # 
+Laura currently has: 
+RGW802, 
+
+Yash currently has: 
+PEP213, 
+
+Rachel currently has: 
+LUM573, FQK762, CAN597, 
+
+Number of cars out for rental: 5 
+ 
+ # # # Rents for the Day # # # 
+Yash's Rental Receipt (CasualCustomer):
+CarPlate CarType     GPS   Satellite     CarSeats Price     
+----------------------------------------------------
+HRS483   MinivanCar  true  true          1        $610.00    
+
+Rental Duration: 3 Days
+Rental Total Cost: $610.0
+
+Jim's Rental Receipt (CasualCustomer):
+CarPlate CarType     GPS   Satellite     CarSeats Price     
+----------------------------------------------------
+ZXR660   EconomyCar  false true          2        $315.00    
+
+Rental Duration: 3 Days
+Rental Total Cost: $315.0
+
+Ross's Rental Receipt (CasualCustomer):
+CarPlate CarType     GPS   Satellite     CarSeats Price     
+----------------------------------------------------
+IYS297   StandardCar true  true          1        $110.00    
+
+Rental Duration: 1 Days
+Rental Total Cost: $110.0
+
+Daily Total: 1035.0
+----------------------------------------
+Day: 3
+Remaining Cars at the beginning of the day: 18
+Cars left: PCZ106, JOV368, ZCU130, ZBP122, UFF974, LJR299, YFX513, NSN451, YPS310, KXQ659, SUK006, LNW723, VWI702, XLY048, OCW805, MWM654, PEP213, IYS297
+
+ # # # Current Rental Situation # # # 
+Laura currently has: 
+RGW802, 
+
+Yash currently has: 
+HRS483, 
+
+Jim currently has: 
+ZXR660, 
+
+Rachel currently has: 
+LUM573, FQK762, CAN597, 
+
+Number of cars out for rental: 6 
+ 
+ # # # Rents for the Day # # # 
+Lenny's Rental Receipt (RegularCustomer):
+CarPlate CarType     GPS   Satellite     CarSeats Price     
+----------------------------------------------------
+2
+PCZ106   LuxuryCar   false true          3        $845.00    
+JOV368   SUVCar      false false         1        $610.00    
+ZCU130   MinivanCar  false false         1        $805.00    
+
+Rental Duration: 4 Days
+Rental Total Cost: $2260.0
+
+Chandler's Rental Receipt (RegularCustomer):
+CarPlate CarType     GPS   Satellite     CarSeats Price     
+----------------------------------------------------
+2
+ZBP122   EconomyCar  false true          3        $515.00    
+UFF974   StandardCar false false         3        $505.00    
+LJR299   LuxuryCar   true  false         2        $1025.00   
+
+Rental Duration: 5 Days
+Rental Total Cost: $2045.0
+
+Jim's Rental Receipt (CasualCustomer):
+CarPlate CarType     GPS   Satellite     CarSeats Price     
+----------------------------------------------------
+YFX513   SUVCar      false false         0        $300.00    
+
+Rental Duration: 2 Days
+Rental Total Cost: $300.0
+
+Joey's Rental Receipt (CasualCustomer):
+CarPlate CarType     GPS   Satellite     CarSeats Price     
+----------------------------------------------------
+NSN451   MinivanCar  true  true          0        $210.00    
+
+Rental Duration: 1 Days
+Rental Total Cost: $210.0
+
+Daily Total: 4815.0
+----------------------------------------
+Day: 4
+Remaining Cars at the beginning of the day: 12
+Cars left: YPS310, KXQ659, SUK006, LNW723, VWI702, XLY048, OCW805, MWM654, PEP213, IYS297, RGW802, NSN451
+
+ # # # Current Rental Situation # # # 
+Yash currently has: 
+HRS483, 
+
+Lenny currently has: 
+PCZ106, JOV368, ZCU130, 
+
+Chandler currently has: 
+ZBP122, UFF974, LJR299, 
+
+Jim currently has: 
+ZXR660, YFX513, 
+
+Rachel currently has: 
+LUM573, FQK762, CAN597, 
+
+Number of cars out for rental: 12 
+ 
+ # # # Rents for the Day # # # 
+Laura's Rental Receipt (CasualCustomer):
+CarPlate CarType     GPS   Satellite     CarSeats Price     
+----------------------------------------------------
+YPS310   EconomyCar  true  false         0        $305.00    
+
+Rental Duration: 3 Days
+Rental Total Cost: $305.0
+
+Liam's Rental Receipt (RegularCustomer):
+CarPlate CarType     GPS   Satellite     CarSeats Price     
+----------------------------------------------------
+2
+KXQ659   StandardCar true  false         2        $310.00    
+SUK006   LuxuryCar   false true          0        $645.00    
+LNW723   SUVCar      true  false         1        $475.00    
+
+Rental Duration: 3 Days
+Rental Total Cost: $1430.0
+
+Yash's Rental Receipt (CasualCustomer):
+CarPlate CarType     GPS   Satellite     CarSeats Price     
+----------------------------------------------------
+VWI702   StandardCar true  true          3        $130.00    
+
+Rental Duration: 3 Days
+Rental Total Cost: $130.0
+
+Jim's Rental Receipt (CasualCustomer):
+CarPlate CarType     GPS   Satellite     CarSeats Price     
+----------------------------------------------------
+XLY048   EconomyCar  true  false         0        $105.00    
+
+Rental Duration: 1 Days
+Rental Total Cost: $105.0
+
+Joey's Rental Receipt (CasualCustomer):
+CarPlate CarType     GPS   Satellite     CarSeats Price     
+----------------------------------------------------
+OCW805   StandardCar false false         0        $210.00    
+
+Rental Duration: 1 Days
+Rental Total Cost: $210.0
+
+Monica's Rental Receipt (CasualCustomer):
+CarPlate CarType     GPS   Satellite     CarSeats Price     
+----------------------------------------------------
+MWM654   SUVCar      true  false         0        $175.00    
+
+Rental Duration: 3 Days
+Rental Total Cost: $175.0
+
+Marcel's Rental Receipt (CasualCustomer):
+CarPlate CarType     GPS   Satellite     CarSeats Price     
+----------------------------------------------------
+PEP213   EconomyCar  false false         2        $305.00    
+
+Rental Duration: 2 Days
+Rental Total Cost: $305.0
+
+Daily Total: 2660.0
+----------------------------------------
+Day: 5
+Remaining Cars at the beginning of the day: 8
+Cars left: IYS297, RGW802, NSN451, ZXR660, XLY048, LUM573, CAN597, OCW805
+
+ # # # Current Rental Situation # # # 
+Laura currently has: 
+YPS310, 
+
+Liam currently has: 
+KXQ659, SUK006, LNW723, 
+
+Yash currently has: 
+HRS483, VWI702, 
+
+Lenny currently has: 
+PCZ106, JOV368, ZCU130, 
+
+Chandler currently has: 
+ZBP122, UFF974, LJR299, 
+
+Jim currently has: 
+YFX513, 
+
+Rachel currently has: 
+FQK762, 
+
+Monica currently has: 
+MWM654, 
+
+Marcel currently has: 
+PEP213, 
+
+Number of cars out for rental: 16 
+ 
+ # # # Rents for the Day # # # 
+Yash's Rental Receipt (CasualCustomer):
+CarPlate CarType     GPS   Satellite     CarSeats Price     
+----------------------------------------------------
+IYS297   StandardCar true  true          1        $110.00    
+
+Rental Duration: 1 Days
+Rental Total Cost: $110.0
+
+Rachel's Rental Receipt (RegularCustomer):
+CarPlate CarType     GPS   Satellite     CarSeats Price     
+----------------------------------------------------
+1
+RGW802   LuxuryCar   true  true          0        $625.00    
+
+Rental Duration: 5 Days
+Rental Total Cost: $625.0
+
+Daily Total: 735.0
+----------------------------------------
+Day: 6
+Remaining Cars at the beginning of the day: 11
+Cars left: NSN451, ZXR660, XLY048, LUM573, CAN597, OCW805, HRS483, IYS297, YFX513, FQK762, PEP213
+
+ # # # Current Rental Situation # # # 
+Laura currently has: 
+YPS310, 
+
+Liam currently has: 
+KXQ659, SUK006, LNW723, 
+
+Yash currently has: 
+VWI702, 
+
+Lenny currently has: 
+PCZ106, JOV368, ZCU130, 
+
+Chandler currently has: 
+ZBP122, UFF974, LJR299, 
+
+Rachel currently has: 
+RGW802, 
+
+Monica currently has: 
+MWM654, 
+
+Number of cars out for rental: 13 
+ 
+ # # # Rents for the Day # # # 
+Laura's Rental Receipt (CasualCustomer):
+CarPlate CarType     GPS   Satellite     CarSeats Price     
+----------------------------------------------------
+NSN451   MinivanCar  true  true          3        $210.00    
+
+Rental Duration: 2 Days
+Rental Total Cost: $210.0
+
+Phoebe's Rental Receipt (RegularCustomer):
+CarPlate CarType     GPS   Satellite     CarSeats Price     
+----------------------------------------------------
+2
+ZXR660   EconomyCar  true  false         3        $315.00    
+XLY048   EconomyCar  true  true          0        $105.00    
+LUM573   LuxuryCar   false true          1        $1025.00   
+
+Rental Duration: 3 Days
+Rental Total Cost: $1445.0
+
+Rachel's Rental Receipt (RegularCustomer):
+CarPlate CarType     GPS   Satellite     CarSeats Price     
+----------------------------------------------------
+1
+CAN597   MinivanCar  false true          2        $1010.00   
+OCW805   StandardCar true  true          1        $210.00    
+
+Rental Duration: 4 Days
+Rental Total Cost: $1220.0
+
+Joey's Rental Receipt (CasualCustomer):
+CarPlate CarType     GPS   Satellite     CarSeats Price     
+----------------------------------------------------
+HRS483   MinivanCar  false true          1        $610.00    
+
+Rental Duration: 3 Days
+Rental Total Cost: $610.0
+
+Marcel's Rental Receipt (CasualCustomer):
+CarPlate CarType     GPS   Satellite     CarSeats Price     
+----------------------------------------------------
+IYS297   StandardCar true  true          2        $110.00    
+
+Rental Duration: 1 Days
+Rental Total Cost: $110.0
+
+Daily Total: 3595.0
+----------------------------------------
+Day: 7
+Remaining Cars at the beginning of the day: 10
+Cars left: YFX513, FQK762, PEP213, YPS310, KXQ659, LNW723, PCZ106, ZCU130, MWM654, IYS297
+
+ # # # Current Rental Situation # # # 
+Laura currently has: 
+NSN451, 
+
+Liam currently has: 
+SUK006, 
+
+Yash currently has: 
+VWI702, 
+
+Lenny currently has: 
+JOV368, 
+
+Chandler currently has: 
+ZBP122, UFF974, LJR299, 
+
+Phoebe currently has: 
+ZXR660, XLY048, LUM573, 
+
+Rachel currently has: 
+RGW802, CAN597, OCW805, 
+
+Joey currently has: 
+HRS483, 
+
+Number of cars out for rental: 14 
+ 
+ # # # Rents for the Day # # # 
+Laura's Rental Receipt (CasualCustomer):
+CarPlate CarType     GPS   Satellite     CarSeats Price     
+----------------------------------------------------
+YFX513   SUVCar      false false         1        $160.00    
+
+Rental Duration: 1 Days
+Rental Total Cost: $160.0
+
+Liam's Rental Receipt (RegularCustomer):
+CarPlate CarType     GPS   Satellite     CarSeats Price     
+----------------------------------------------------
+1
+FQK762   SUVCar      false false         3        $795.00    
+PEP213   EconomyCar  false false         0        $305.00    
+
+Rental Duration: 3 Days
+Rental Total Cost: $1100.0
+
+Jim's Rental Receipt (CasualCustomer):
+CarPlate CarType     GPS   Satellite     CarSeats Price     
+----------------------------------------------------
+YPS310   EconomyCar  true  false         2        $305.00    
+
+Rental Duration: 1 Days
+Rental Total Cost: $305.0
+
+Joey's Rental Receipt (CasualCustomer):
+CarPlate CarType     GPS   Satellite     CarSeats Price     
+----------------------------------------------------
+KXQ659   StandardCar false false         1        $310.00    
+
+Rental Duration: 2 Days
+Rental Total Cost: $310.0
+
+Marcel's Rental Receipt (CasualCustomer):
+CarPlate CarType     GPS   Satellite     CarSeats Price     
+----------------------------------------------------
+LNW723   SUVCar      false false         0        $475.00    
+
+Rental Duration: 2 Days
+Rental Total Cost: $475.0
+
+Daily Total: 2350.0
+----------------------------------------
+Day: 8
+Remaining Cars at the beginning of the day: 11
+Cars left: PCZ106, ZCU130, MWM654, IYS297, YFX513, SUK006, VWI702, JOV368, ZBP122, LJR299, YPS310
+
+ # # # Current Rental Situation # # # 
+Laura currently has: 
+NSN451, 
+
+Liam currently has: 
+FQK762, PEP213, 
+
+Chandler currently has: 
+UFF974, 
+
+Phoebe currently has: 
+ZXR660, XLY048, LUM573, 
+
+Rachel currently has: 
+RGW802, CAN597, OCW805, 
+
+Joey currently has: 
+HRS483, KXQ659, 
+
+Marcel currently has: 
+LNW723, 
+
+Number of cars out for rental: 13 
+ 
+ # # # Rents for the Day # # # 
+Liam's Rental Receipt (RegularCustomer):
+CarPlate CarType     GPS   Satellite     CarSeats Price     
+----------------------------------------------------
+0
+PCZ106   LuxuryCar   false true          0        $845.00    
+
+Rental Duration: 4 Days
+Rental Total Cost: $845.0
+
+Yash's Rental Receipt (CasualCustomer):
+CarPlate CarType     GPS   Satellite     CarSeats Price     
+----------------------------------------------------
+ZCU130   MinivanCar  false false         2        $805.00    
+
+Rental Duration: 3 Days
+Rental Total Cost: $805.0
+
+Lenny's Rental Receipt (RegularCustomer):
+CarPlate CarType     GPS   Satellite     CarSeats Price     
+----------------------------------------------------
+2
+MWM654   SUVCar      false false         0        $175.00    
+IYS297   StandardCar false false         3        $110.00    
+
+Rental Duration: 4 Days
+Rental Total Cost: $285.0
+
+Ross's Rental Receipt (CasualCustomer):
+CarPlate CarType     GPS   Satellite     CarSeats Price     
+----------------------------------------------------
+YFX513   SUVCar      true  true          3        $160.00    
+
+Rental Duration: 3 Days
+Rental Total Cost: $160.0
+
+Joey's Rental Receipt (CasualCustomer):
+CarPlate CarType     GPS   Satellite     CarSeats Price     
+----------------------------------------------------
+SUK006   LuxuryCar   true  true          3        $645.00    
+
+Rental Duration: 1 Days
+Rental Total Cost: $645.0
+
+Monica's Rental Receipt (CasualCustomer):
+CarPlate CarType     GPS   Satellite     CarSeats Price     
+----------------------------------------------------
+VWI702   StandardCar false false         0        $130.00    
+
+Rental Duration: 2 Days
+Rental Total Cost: $130.0
+
+Marcel's Rental Receipt (CasualCustomer):
+CarPlate CarType     GPS   Satellite     CarSeats Price     
+----------------------------------------------------
+JOV368   SUVCar      false true          1        $610.00    
+
+Rental Duration: 2 Days
+Rental Total Cost: $610.0
+
+Daily Total: 3480.0
+----------------------------------------
+Day: 9
+Remaining Cars at the beginning of the day: 10
+Cars left: ZBP122, LJR299, YPS310, NSN451, UFF974, ZXR660, LUM573, HRS483, SUK006, LNW723
+
+ # # # Current Rental Situation # # # 
+Liam currently has: 
+FQK762, PEP213, PCZ106, 
+
+Yash currently has: 
+ZCU130, 
+
+Lenny currently has: 
+MWM654, IYS297, 
+
+Phoebe currently has: 
+XLY048, 
+
+Ross currently has: 
+YFX513, 
+
+Rachel currently has: 
+RGW802, CAN597, OCW805, 
+
+Joey currently has: 
+KXQ659, 
+
+Monica currently has: 
+VWI702, 
+
+Marcel currently has: 
+JOV368, 
+
+Number of cars out for rental: 14 
+ 
+ # # # Rents for the Day # # # 
+Lenny's Rental Receipt (RegularCustomer):
+CarPlate CarType     GPS   Satellite     CarSeats Price     
+----------------------------------------------------
+0
+ZBP122   EconomyCar  true  true          1        $515.00    
+
+Rental Duration: 4 Days
+Rental Total Cost: $515.0
+
+Jim's Rental Receipt (CasualCustomer):
+CarPlate CarType     GPS   Satellite     CarSeats Price     
+----------------------------------------------------
+LJR299   LuxuryCar   true  true          3        $1025.00   
+
+Rental Duration: 2 Days
+Rental Total Cost: $1025.0
+
+Ross's Rental Receipt (CasualCustomer):
+CarPlate CarType     GPS   Satellite     CarSeats Price     
+----------------------------------------------------
+YPS310   EconomyCar  false false         3        $305.00    
+
+Rental Duration: 3 Days
+Rental Total Cost: $305.0
+
+Marcel's Rental Receipt (CasualCustomer):
+CarPlate CarType     GPS   Satellite     CarSeats Price     
+----------------------------------------------------
+NSN451   MinivanCar  false true          0        $210.00    
+
+Rental Duration: 2 Days
+Rental Total Cost: $210.0
+
+Daily Total: 2055.0
+----------------------------------------
+Day: 10
+Remaining Cars at the beginning of the day: 11
+Cars left: UFF974, ZXR660, LUM573, HRS483, SUK006, LNW723, PEP213, XLY048, CAN597, KXQ659, VWI702
+
+ # # # Current Rental Situation # # # 
+Liam currently has: 
+FQK762, PCZ106, 
+
+Yash currently has: 
+ZCU130, 
+
+Lenny currently has: 
+MWM654, IYS297, ZBP122, 
+
+Jim currently has: 
+LJR299, 
+
+Ross currently has: 
+YFX513, YPS310, 
+
+Rachel currently has: 
+RGW802, OCW805, 
+
+Marcel currently has: 
+JOV368, NSN451, 
+
+Number of cars out for rental: 13 
+ 
+ # # # Rents for the Day # # # 
+Liam's Rental Receipt (RegularCustomer):
+CarPlate CarType     GPS   Satellite     CarSeats Price     
+----------------------------------------------------
+0
+UFF974   StandardCar true  false         0        $505.00    
+
+Rental Duration: 4 Days
+Rental Total Cost: $505.0
+
+Yash's Rental Receipt (CasualCustomer):
+CarPlate CarType     GPS   Satellite     CarSeats Price     
+----------------------------------------------------
+ZXR660   EconomyCar  false true          2        $315.00    
+
+Rental Duration: 3 Days
+Rental Total Cost: $315.0
+
+Chandler's Rental Receipt (RegularCustomer):
+CarPlate CarType     GPS   Satellite     CarSeats Price     
+----------------------------------------------------
+2
+LUM573   LuxuryCar   true  true          3        $1025.00   
+HRS483   MinivanCar  false true          3        $610.00    
+SUK006   LuxuryCar   true  true          3        $645.00    
+
+Rental Duration: 5 Days
+Rental Total Cost: $2280.0
+
+Phoebe's Rental Receipt (RegularCustomer):
+CarPlate CarType     GPS   Satellite     CarSeats Price     
+----------------------------------------------------
+2
+LNW723   SUVCar      true  true          0        $475.00    
+PEP213   EconomyCar  true  true          1        $305.00    
+
+Rental Duration: 3 Days
+Rental Total Cost: $780.0
+
+Monica's Rental Receipt (CasualCustomer):
+CarPlate CarType     GPS   Satellite     CarSeats Price     
+----------------------------------------------------
+XLY048   EconomyCar  true  false         0        $105.00    
+
+Rental Duration: 3 Days
+Rental Total Cost: $105.0
+
+Marcel's Rental Receipt (CasualCustomer):
+CarPlate CarType     GPS   Satellite     CarSeats Price     
+----------------------------------------------------
+CAN597   MinivanCar  false false         0        $1010.00   
+
+Rental Duration: 3 Days
+Rental Total Cost: $1010.0
+
+Daily Total: 4995.0
+----------------------------------------
+Day: 11
+Remaining Cars at the beginning of the day: 8
+Cars left: KXQ659, VWI702, FQK762, ZCU130, LJR299, YFX513, RGW802, JOV368
+
+ # # # Current Rental Situation # # # 
+Liam currently has: 
+PCZ106, UFF974, 
+
+Yash currently has: 
+ZXR660, 
+
+Lenny currently has: 
+MWM654, IYS297, ZBP122, 
+
+Chandler currently has: 
+LUM573, HRS483, SUK006, 
+
+Phoebe currently has: 
+LNW723, PEP213, 
+
+Ross currently has: 
+YPS310, 
+
+Rachel currently has: 
+OCW805, 
+
+Monica currently has: 
+XLY048, 
+
+Marcel currently has: 
+NSN451, CAN597, 
+
+Number of cars out for rental: 16 
+ 
+ # # # Rents for the Day # # # 
+Liam's Rental Receipt (RegularCustomer):
+CarPlate CarType     GPS   Satellite     CarSeats Price     
+----------------------------------------------------
+0
+KXQ659   StandardCar false true          0        $310.00    
+
+Rental Duration: 4 Days
+Rental Total Cost: $310.0
+
+Phoebe's Rental Receipt (RegularCustomer):
+CarPlate CarType     GPS   Satellite     CarSeats Price     
+----------------------------------------------------
+0
+VWI702   StandardCar true  true          0        $130.00    
+
+Rental Duration: 5 Days
+Rental Total Cost: $130.0
+
+Ross's Rental Receipt (CasualCustomer):
+CarPlate CarType     GPS   Satellite     CarSeats Price     
+----------------------------------------------------
+FQK762   SUVCar      false false         1        $795.00    
+
+Rental Duration: 2 Days
+Rental Total Cost: $795.0
+
+Daily Total: 1235.0
+----------------------------------------
+Day: 12
+Remaining Cars at the beginning of the day: 8
+Cars left: ZCU130, LJR299, YFX513, RGW802, JOV368, MWM654, OCW805, NSN451
+
+ # # # Current Rental Situation # # # 
+Liam currently has: 
+PCZ106, UFF974, KXQ659, 
+
+Yash currently has: 
+ZXR660, 
+
+Lenny currently has: 
+IYS297, ZBP122, 
+
+Chandler currently has: 
+LUM573, HRS483, SUK006, 
+
+Phoebe currently has: 
+LNW723, PEP213, VWI702, 
+
+Ross currently has: 
+YPS310, FQK762, 
+
+Monica currently has: 
+XLY048, 
+
+Marcel currently has: 
+CAN597, 
+
+Number of cars out for rental: 16 
+ 
+ # # # Rents for the Day # # # 
+Yash's Rental Receipt (CasualCustomer):
+CarPlate CarType     GPS   Satellite     CarSeats Price     
+----------------------------------------------------
+ZCU130   MinivanCar  true  true          3        $805.00    
+
+Rental Duration: 3 Days
+Rental Total Cost: $805.0
+
+Lenny's Rental Receipt (RegularCustomer):
+CarPlate CarType     GPS   Satellite     CarSeats Price     
+----------------------------------------------------
+0
+LJR299   LuxuryCar   true  false         2        $1025.00   
+
+Rental Duration: 4 Days
+Rental Total Cost: $1025.0
+
+Ross's Rental Receipt (CasualCustomer):
+CarPlate CarType     GPS   Satellite     CarSeats Price     
+----------------------------------------------------
+YFX513   SUVCar      false false         3        $160.00    
+
+Rental Duration: 1 Days
+Rental Total Cost: $160.0
+
+Rachel's Rental Receipt (RegularCustomer):
+CarPlate CarType     GPS   Satellite     CarSeats Price     
+----------------------------------------------------
+2
+RGW802   LuxuryCar   true  true          1        $625.00    
+
+Rental Duration: 3 Days
+Rental Total Cost: $625.0
+
+Monica's Rental Receipt (CasualCustomer):
+CarPlate CarType     GPS   Satellite     CarSeats Price     
+----------------------------------------------------
+JOV368   SUVCar      true  false         3        $610.00    
+
+Rental Duration: 3 Days
+Rental Total Cost: $610.0
+
+Daily Total: 3225.0
+----------------------------------------
+Day: 13
+Remaining Cars at the beginning of the day: 8
+Cars left: MWM654, OCW805, NSN451, IYS297, LNW723, YPS310, YFX513, XLY048
+
+ # # # Current Rental Situation # # # 
+Liam currently has: 
+PCZ106, UFF974, KXQ659, 
+
+Yash currently has: 
+ZXR660, ZCU130, 
+
+Lenny currently has: 
+ZBP122, LJR299, 
+
+Chandler currently has: 
+LUM573, HRS483, SUK006, 
+
+Phoebe currently has: 
+PEP213, VWI702, 
+
+Ross currently has: 
+FQK762, 
+
+Rachel currently has: 
+RGW802, 
+
+Monica currently has: 
+JOV368, 
+
+Marcel currently has: 
+CAN597, 
+
+Number of cars out for rental: 16 
+ 
+ # # # Rents for the Day # # # 
+Laura's Rental Receipt (CasualCustomer):
+CarPlate CarType     GPS   Satellite     CarSeats Price     
+----------------------------------------------------
+MWM654   SUVCar      false false         3        $175.00    
+
+Rental Duration: 3 Days
+Rental Total Cost: $175.0
+
+Yash's Rental Receipt (CasualCustomer):
+CarPlate CarType     GPS   Satellite     CarSeats Price     
+----------------------------------------------------
+OCW805   StandardCar true  false         0        $210.00    
+
+Rental Duration: 1 Days
+Rental Total Cost: $210.0
+
+Lenny's Rental Receipt (RegularCustomer):
+CarPlate CarType     GPS   Satellite     CarSeats Price     
+----------------------------------------------------
+0
+NSN451   MinivanCar  false true          2        $210.00    
+
+Rental Duration: 3 Days
+Rental Total Cost: $210.0
+
+Ross's Rental Receipt (CasualCustomer):
+CarPlate CarType     GPS   Satellite     CarSeats Price     
+----------------------------------------------------
+IYS297   StandardCar false false         0        $110.00    
+
+Rental Duration: 3 Days
+Rental Total Cost: $110.0
+
+Rachel's Rental Receipt (RegularCustomer):
+CarPlate CarType     GPS   Satellite     CarSeats Price     
+----------------------------------------------------
+1
+LNW723   SUVCar      false false         1        $475.00    
+YPS310   EconomyCar  false false         0        $305.00    
+
+Rental Duration: 3 Days
+Rental Total Cost: $780.0
+
+Joey's Rental Receipt (CasualCustomer):
+CarPlate CarType     GPS   Satellite     CarSeats Price     
+----------------------------------------------------
+YFX513   SUVCar      false true          1        $160.00    
+
+Rental Duration: 3 Days
+Rental Total Cost: $160.0
+
+Monica's Rental Receipt (CasualCustomer):
+CarPlate CarType     GPS   Satellite     CarSeats Price     
+----------------------------------------------------
+XLY048   EconomyCar  false false         0        $105.00    
+
+Rental Duration: 1 Days
+Rental Total Cost: $105.0
+
+Daily Total: 1750.0
+----------------------------------------
+Day: 14
+Remaining Cars at the beginning of the day: 8
+Cars left: PCZ106, ZXR660, OCW805, ZBP122, PEP213, FQK762, XLY048, CAN597
+
+ # # # Current Rental Situation # # # 
+Laura currently has: 
+MWM654, 
+
+Liam currently has: 
+UFF974, KXQ659, 
+
+Yash currently has: 
+ZCU130, 
+
+Lenny currently has: 
+LJR299, NSN451, 
+
+Chandler currently has: 
+LUM573, HRS483, SUK006, 
+
+Phoebe currently has: 
+VWI702, 
+
+Ross currently has: 
+IYS297, 
+
+Rachel currently has: 
+RGW802, LNW723, YPS310, 
+
+Joey currently has: 
+YFX513, 
+
+Monica currently has: 
+JOV368, 
+
+Number of cars out for rental: 16 
+ 
+ # # # Rents for the Day # # # 
+Monica's Rental Receipt (CasualCustomer):
+CarPlate CarType     GPS   Satellite     CarSeats Price     
+----------------------------------------------------
+PCZ106   LuxuryCar   false true          0        $845.00    
+
+Rental Duration: 3 Days
+Rental Total Cost: $845.0
+
+Daily Total: 845.0
+----------------------------------------
+Day: 15
+Remaining Cars at the beginning of the day: 11
+Cars left: ZXR660, OCW805, ZBP122, PEP213, FQK762, XLY048, CAN597, UFF974, LUM573, SUK006, RGW802
+
+ # # # Current Rental Situation # # # 
+Laura currently has: 
+MWM654, 
+
+Liam currently has: 
+KXQ659, 
+
+Yash currently has: 
+ZCU130, 
+
+Lenny currently has: 
+LJR299, NSN451, 
+
+Chandler currently has: 
+HRS483, 
+
+Phoebe currently has: 
+VWI702, 
+
+Ross currently has: 
+IYS297, 
+
+Rachel currently has: 
+LNW723, YPS310, 
+
+Joey currently has: 
+YFX513, 
+
+Monica currently has: 
+JOV368, PCZ106, 
+
+Number of cars out for rental: 13 
+ 
+ # # # Rents for the Day # # # 
+Yash's Rental Receipt (CasualCustomer):
+CarPlate CarType     GPS   Satellite     CarSeats Price     
+----------------------------------------------------
+ZXR660   EconomyCar  false true          1        $315.00    
+
+Rental Duration: 2 Days
+Rental Total Cost: $315.0
+
+Phoebe's Rental Receipt (RegularCustomer):
+CarPlate CarType     GPS   Satellite     CarSeats Price     
+----------------------------------------------------
+1
+OCW805   StandardCar false true          1        $210.00    
+ZBP122   EconomyCar  false false         3        $515.00    
+
+Rental Duration: 3 Days
+Rental Total Cost: $725.0
+
+Marcel's Rental Receipt (CasualCustomer):
+CarPlate CarType     GPS   Satellite     CarSeats Price     
+----------------------------------------------------
+PEP213   EconomyCar  true  false         0        $305.00    
+
+Rental Duration: 3 Days
+Rental Total Cost: $305.0
+
+Daily Total: 1345.0
+----------------------------------------
+Day: 16
+Remaining Cars at the beginning of the day: 15
+Cars left: FQK762, XLY048, CAN597, UFF974, LUM573, SUK006, RGW802, MWM654, KXQ659, ZCU130, NSN451, HRS483, YPS310, YFX513, JOV368
+
+ # # # Current Rental Situation # # # 
+Yash currently has: 
+ZXR660, 
+
+Lenny currently has: 
+LJR299, 
+
+Phoebe currently has: 
+VWI702, OCW805, ZBP122, 
+
+Ross currently has: 
+IYS297, 
+
+Rachel currently has: 
+LNW723, 
+
+Monica currently has: 
+PCZ106, 
+
+Marcel currently has: 
+PEP213, 
+
+Number of cars out for rental: 9 
+ 
+ # # # Rents for the Day # # # 
+Liam's Rental Receipt (RegularCustomer):
+CarPlate CarType     GPS   Satellite     CarSeats Price     
+----------------------------------------------------
+2
+FQK762   SUVCar      false false         3        $795.00    
+XLY048   EconomyCar  true  true          1        $105.00    
+CAN597   MinivanCar  false true          1        $1010.00   
+
+Rental Duration: 5 Days
+Rental Total Cost: $1910.0
+
+Yash's Rental Receipt (CasualCustomer):
+CarPlate CarType     GPS   Satellite     CarSeats Price     
+----------------------------------------------------
+UFF974   StandardCar false true          2        $505.00    
+
+Rental Duration: 3 Days
+Rental Total Cost: $505.0
+
+Lenny's Rental Receipt (RegularCustomer):
+CarPlate CarType     GPS   Satellite     CarSeats Price     
+----------------------------------------------------
+1
+LUM573   LuxuryCar   true  false         2        $1025.00   
+SUK006   LuxuryCar   true  true          1        $645.00    
+
+Rental Duration: 4 Days
+Rental Total Cost: $1670.0
+
+Chandler's Rental Receipt (RegularCustomer):
+CarPlate CarType     GPS   Satellite     CarSeats Price     
+----------------------------------------------------
+2
+RGW802   LuxuryCar   false true          0        $625.00    
+MWM654   SUVCar      true  true          3        $175.00    
+KXQ659   StandardCar true  false         1        $310.00    
+
+Rental Duration: 4 Days
+Rental Total Cost: $1110.0
+
+Jim's Rental Receipt (CasualCustomer):
+CarPlate CarType     GPS   Satellite     CarSeats Price     
+----------------------------------------------------
+ZCU130   MinivanCar  false true          1        $805.00    
+
+Rental Duration: 3 Days
+Rental Total Cost: $805.0
+
+Ross's Rental Receipt (CasualCustomer):
+CarPlate CarType     GPS   Satellite     CarSeats Price     
+----------------------------------------------------
+NSN451   MinivanCar  true  true          1        $210.00    
+
+Rental Duration: 3 Days
+Rental Total Cost: $210.0
+
+Rachel's Rental Receipt (RegularCustomer):
+CarPlate CarType     GPS   Satellite     CarSeats Price     
+----------------------------------------------------
+1
+HRS483   MinivanCar  true  true          1        $610.00    
+
+Rental Duration: 4 Days
+Rental Total Cost: $610.0
+
+Daily Total: 6820.0
+----------------------------------------
+Day: 17
+Remaining Cars at the beginning of the day: 7
+Cars left: YPS310, YFX513, JOV368, LJR299, VWI702, IYS297, LNW723
+
+ # # # Current Rental Situation # # # 
+Liam currently has: 
+FQK762, XLY048, CAN597, 
+
+Yash currently has: 
+ZXR660, UFF974, 
+
+Lenny currently has: 
+LUM573, SUK006, 
+
+Chandler currently has: 
+RGW802, MWM654, KXQ659, 
+
+Jim currently has: 
+ZCU130, 
+
+Phoebe currently has: 
+OCW805, ZBP122, 
+
+Ross currently has: 
+NSN451, 
+
+Rachel currently has: 
+HRS483, 
+
+Monica currently has: 
+PCZ106, 
+
+Marcel currently has: 
+PEP213, 
+
+Number of cars out for rental: 17 
+ 
+ # # # Rents for the Day # # # 
+Laura's Rental Receipt (CasualCustomer):
+CarPlate CarType     GPS   Satellite     CarSeats Price     
+----------------------------------------------------
+YPS310   EconomyCar  false false         0        $305.00    
+
+Rental Duration: 3 Days
+Rental Total Cost: $305.0
+
+Phoebe's Rental Receipt (RegularCustomer):
+CarPlate CarType     GPS   Satellite     CarSeats Price     
+----------------------------------------------------
+0
+YFX513   SUVCar      true  true          0        $160.00    
+
+Rental Duration: 5 Days
+Rental Total Cost: $160.0
+
+Monica's Rental Receipt (CasualCustomer):
+CarPlate CarType     GPS   Satellite     CarSeats Price     
+----------------------------------------------------
+JOV368   SUVCar      false true          1        $610.00    
+
+Rental Duration: 1 Days
+Rental Total Cost: $610.0
+
+Marcel's Rental Receipt (CasualCustomer):
+CarPlate CarType     GPS   Satellite     CarSeats Price     
+----------------------------------------------------
+LJR299   LuxuryCar   true  true          1        $1025.00   
+
+Rental Duration: 2 Days
+Rental Total Cost: $1025.0
+
+Daily Total: 2100.0
+----------------------------------------
+Day: 18
+Remaining Cars at the beginning of the day: 7
+Cars left: VWI702, IYS297, LNW723, ZXR660, ZBP122, PCZ106, PEP213
+
+ # # # Current Rental Situation # # # 
+Laura currently has: 
+YPS310, 
+
+Liam currently has: 
+FQK762, XLY048, CAN597, 
+
+Yash currently has: 
+UFF974, 
+
+Lenny currently has: 
+LUM573, SUK006, 
+
+Chandler currently has: 
+RGW802, MWM654, KXQ659, 
+
+Jim currently has: 
+ZCU130, 
+
+Phoebe currently has: 
+OCW805, YFX513, 
+
+Ross currently has: 
+NSN451, 
+
+Rachel currently has: 
+HRS483, 
+
+Monica currently has: 
+JOV368, 
+
+Marcel currently has: 
+LJR299, 
+
+Number of cars out for rental: 17 
+ 
+ # # # Rents for the Day # # # 
+Lenny's Rental Receipt (RegularCustomer):
+CarPlate CarType     GPS   Satellite     CarSeats Price     
+----------------------------------------------------
+0
+VWI702   StandardCar false true          2        $130.00    
+
+Rental Duration: 4 Days
+Rental Total Cost: $130.0
+
+Jim's Rental Receipt (CasualCustomer):
+CarPlate CarType     GPS   Satellite     CarSeats Price     
+----------------------------------------------------
+IYS297   StandardCar false false         1        $110.00    
+
+Rental Duration: 1 Days
+Rental Total Cost: $110.0
+
+Ross's Rental Receipt (CasualCustomer):
+CarPlate CarType     GPS   Satellite     CarSeats Price     
+----------------------------------------------------
+LNW723   SUVCar      false true          2        $475.00    
+
+Rental Duration: 2 Days
+Rental Total Cost: $475.0
+
+Rachel's Rental Receipt (RegularCustomer):
+CarPlate CarType     GPS   Satellite     CarSeats Price     
+----------------------------------------------------
+1
+ZXR660   EconomyCar  true  false         0        $315.00    
+ZBP122   EconomyCar  true  true          2        $515.00    
+
+Rental Duration: 4 Days
+Rental Total Cost: $830.0
+
+Monica's Rental Receipt (CasualCustomer):
+CarPlate CarType     GPS   Satellite     CarSeats Price     
+----------------------------------------------------
+PCZ106   LuxuryCar   true  false         0        $845.00    
+
+Rental Duration: 1 Days
+Rental Total Cost: $845.0
+
+Daily Total: 2390.0
+----------------------------------------
+Day: 19
+Remaining Cars at the beginning of the day: 4
+Cars left: PEP213, ZCU130, OCW805, JOV368
+
+ # # # Current Rental Situation # # # 
+Laura currently has: 
+YPS310, 
+
+Liam currently has: 
+FQK762, XLY048, CAN597, 
+
+Yash currently has: 
+UFF974, 
+
+Lenny currently has: 
+LUM573, SUK006, VWI702, 
+
+Chandler currently has: 
+RGW802, MWM654, KXQ659, 
+
+Jim currently has: 
+IYS297, 
+
+Phoebe currently has: 
+YFX513, 
+
+Ross currently has: 
+NSN451, LNW723, 
+
+Rachel currently has: 
+HRS483, ZXR660, ZBP122, 
+
+Monica currently has: 
+PCZ106, 
+
+Marcel currently has: 
+LJR299, 
+
+Number of cars out for rental: 20 
+ 
+ # # # Rents for the Day # # # 
+Yash's Rental Receipt (CasualCustomer):
+CarPlate CarType     GPS   Satellite     CarSeats Price     
+----------------------------------------------------
+PEP213   EconomyCar  false true          3        $305.00    
+
+Rental Duration: 3 Days
+Rental Total Cost: $305.0
+
+Jim's Rental Receipt (CasualCustomer):
+CarPlate CarType     GPS   Satellite     CarSeats Price     
+----------------------------------------------------
+ZCU130   MinivanCar  false false         2        $805.00    
+
+Rental Duration: 2 Days
+Rental Total Cost: $805.0
+
+Phoebe's Rental Receipt (RegularCustomer):
+CarPlate CarType     GPS   Satellite     CarSeats Price     
+----------------------------------------------------
+1
+OCW805   StandardCar true  true          3        $210.00    
+
+Rental Duration: 4 Days
+Rental Total Cost: $210.0
+
+Ross's Rental Receipt (CasualCustomer):
+CarPlate CarType     GPS   Satellite     CarSeats Price     
+----------------------------------------------------
+JOV368   SUVCar      false true          3        $610.00    
+
+Rental Duration: 1 Days
+Rental Total Cost: $610.0
+
+Daily Total: 1930.0
+----------------------------------------
+Day: 20
+Remaining Cars at the beginning of the day: 10
+Cars left: YPS310, UFF974, SUK006, RGW802, KXQ659, IYS297, NSN451, JOV368, PCZ106, LJR299
+
+ # # # Current Rental Situation # # # 
+Liam currently has: 
+FQK762, XLY048, CAN597, 
+
+Yash currently has: 
+PEP213, 
+
+Lenny currently has: 
+LUM573, VWI702, 
+
+Chandler currently has: 
+MWM654, 
+
+Jim currently has: 
+ZCU130, 
+
+Phoebe currently has: 
+YFX513, OCW805, 
+
+Ross currently has: 
+LNW723, 
+
+Rachel currently has: 
+HRS483, ZXR660, ZBP122, 
+
+Number of cars out for rental: 14 
+ 
+ # # # Rents for the Day # # # 
+Chandler's Rental Receipt (RegularCustomer):
+CarPlate CarType     GPS   Satellite     CarSeats Price     
+----------------------------------------------------
+1
+YPS310   EconomyCar  true  false         0        $305.00    
+
+Rental Duration: 4 Days
+Rental Total Cost: $305.0
+
+Jim's Rental Receipt (CasualCustomer):
+CarPlate CarType     GPS   Satellite     CarSeats Price     
+----------------------------------------------------
+UFF974   StandardCar false true          1        $505.00    
+
+Rental Duration: 2 Days
+Rental Total Cost: $505.0
+
+Joey's Rental Receipt (CasualCustomer):
+CarPlate CarType     GPS   Satellite     CarSeats Price     
+----------------------------------------------------
+SUK006   LuxuryCar   true  false         3        $645.00    
+
+Rental Duration: 3 Days
+Rental Total Cost: $645.0
+
+Monica's Rental Receipt (CasualCustomer):
+CarPlate CarType     GPS   Satellite     CarSeats Price     
+----------------------------------------------------
+RGW802   LuxuryCar   true  false         2        $625.00    
+
+Rental Duration: 3 Days
+Rental Total Cost: $625.0
+
+Marcel's Rental Receipt (CasualCustomer):
+CarPlate CarType     GPS   Satellite     CarSeats Price     
+----------------------------------------------------
+KXQ659   StandardCar false false         2        $310.00    
+
+Rental Duration: 3 Days
+Rental Total Cost: $310.0
+
+Daily Total: 2390.0
+----------------------------------------
+Day: 21
+Remaining Cars at the beginning of the day: 11
+Cars left: IYS297, NSN451, JOV368, PCZ106, LJR299, FQK762, CAN597, LUM573, MWM654, LNW723, HRS483
+
+ # # # Current Rental Situation # # # 
+Liam currently has: 
+XLY048, 
+
+Yash currently has: 
+PEP213, 
+
+Lenny currently has: 
+VWI702, 
+
+Chandler currently has: 
+YPS310, 
+
+Jim currently has: 
+ZCU130, UFF974, 
+
+Phoebe currently has: 
+YFX513, OCW805, 
+
+Rachel currently has: 
+ZXR660, ZBP122, 
+
+Joey currently has: 
+SUK006, 
+
+Monica currently has: 
+RGW802, 
+
+Marcel currently has: 
+KXQ659, 
+
+Number of cars out for rental: 13 
+ 
+ # # # Rents for the Day # # # 
+Chandler's Rental Receipt (RegularCustomer):
+CarPlate CarType     GPS   Satellite     CarSeats Price     
+----------------------------------------------------
+1
+IYS297   StandardCar false true          0        $110.00    
+
+Rental Duration: 5 Days
+Rental Total Cost: $110.0
+
+Jim's Rental Receipt (CasualCustomer):
+CarPlate CarType     GPS   Satellite     CarSeats Price     
+----------------------------------------------------
+NSN451   MinivanCar  false false         2        $210.00    
+
+Rental Duration: 1 Days
+Rental Total Cost: $210.0
+
+Marcel's Rental Receipt (CasualCustomer):
+CarPlate CarType     GPS   Satellite     CarSeats Price     
+----------------------------------------------------
+JOV368   SUVCar      false false         3        $610.00    
+
+Rental Duration: 2 Days
+Rental Total Cost: $610.0
+
+Daily Total: 930.0
+----------------------------------------
+Day: 22
+Remaining Cars at the beginning of the day: 12
+Cars left: PCZ106, LJR299, FQK762, CAN597, LUM573, MWM654, LNW723, HRS483, XLY048, ZCU130, NSN451, ZBP122
+
+ # # # Current Rental Situation # # # 
+Yash currently has: 
+PEP213, 
+
+Lenny currently has: 
+VWI702, 
+
+Chandler currently has: 
+YPS310, IYS297, 
+
+Jim currently has: 
+UFF974, 
+
+Phoebe currently has: 
+YFX513, OCW805, 
+
+Rachel currently has: 
+ZXR660, 
+
+Joey currently has: 
+SUK006, 
+
+Monica currently has: 
+RGW802, 
+
+Marcel currently has: 
+KXQ659, JOV368, 
+
+Number of cars out for rental: 12 
+ 
+ # # # Rents for the Day # # # 
+Laura's Rental Receipt (CasualCustomer):
+CarPlate CarType     GPS   Satellite     CarSeats Price     
+----------------------------------------------------
+PCZ106   LuxuryCar   false false         0        $845.00    
+
+Rental Duration: 2 Days
+Rental Total Cost: $845.0
+
+Liam's Rental Receipt (RegularCustomer):
+CarPlate CarType     GPS   Satellite     CarSeats Price     
+----------------------------------------------------
+2
+LJR299   LuxuryCar   false true          2        $1025.00   
+
+Rental Duration: 5 Days
+Rental Total Cost: $1025.0
+
+Yash's Rental Receipt (CasualCustomer):
+CarPlate CarType     GPS   Satellite     CarSeats Price     
+----------------------------------------------------
+FQK762   SUVCar      false true          0        $795.00    
+
+Rental Duration: 3 Days
+Rental Total Cost: $795.0
+
+Chandler's Rental Receipt (RegularCustomer):
+CarPlate CarType     GPS   Satellite     CarSeats Price     
+----------------------------------------------------
+0
+CAN597   MinivanCar  true  true          3        $1010.00   
+
+Rental Duration: 5 Days
+Rental Total Cost: $1010.0
+
+Marcel's Rental Receipt (CasualCustomer):
+CarPlate CarType     GPS   Satellite     CarSeats Price     
+----------------------------------------------------
+LUM573   LuxuryCar   false false         1        $1025.00   
+
+Rental Duration: 2 Days
+Rental Total Cost: $1025.0
+
+Daily Total: 4700.0
+----------------------------------------
+Day: 23
+Remaining Cars at the beginning of the day: 14
+Cars left: MWM654, LNW723, HRS483, XLY048, ZCU130, NSN451, ZBP122, PEP213, UFF974, OCW805, ZXR660, SUK006, RGW802, KXQ659
+
+ # # # Current Rental Situation # # # 
+Laura currently has: 
+PCZ106, 
+
+Liam currently has: 
+LJR299, 
+
+Yash currently has: 
+FQK762, 
+
+Lenny currently has: 
+VWI702, 
+
+Chandler currently has: 
+YPS310, IYS297, CAN597, 
+
+Phoebe currently has: 
+YFX513, 
+
+Marcel currently has: 
+JOV368, LUM573, 
+
+Number of cars out for rental: 10 
+ 
+ # # # Rents for the Day # # # 
+Laura's Rental Receipt (CasualCustomer):
+CarPlate CarType     GPS   Satellite     CarSeats Price     
+----------------------------------------------------
+MWM654   SUVCar      false false         2        $175.00    
+
+Rental Duration: 1 Days
+Rental Total Cost: $175.0
+
+Yash's Rental Receipt (CasualCustomer):
+CarPlate CarType     GPS   Satellite     CarSeats Price     
+----------------------------------------------------
+LNW723   SUVCar      true  false         2        $475.00    
+
+Rental Duration: 2 Days
+Rental Total Cost: $475.0
+
+Lenny's Rental Receipt (RegularCustomer):
+CarPlate CarType     GPS   Satellite     CarSeats Price     
+----------------------------------------------------
+1
+HRS483   MinivanCar  false true          3        $610.00    
+XLY048   EconomyCar  true  true          0        $105.00    
+
+Rental Duration: 3 Days
+Rental Total Cost: $715.0
+
+Phoebe's Rental Receipt (RegularCustomer):
+CarPlate CarType     GPS   Satellite     CarSeats Price     
+----------------------------------------------------
+1
+ZCU130   MinivanCar  true  false         0        $805.00    
+NSN451   MinivanCar  false true          0        $210.00    
+
+Rental Duration: 3 Days
+Rental Total Cost: $1015.0
+
+Monica's Rental Receipt (CasualCustomer):
+CarPlate CarType     GPS   Satellite     CarSeats Price     
+----------------------------------------------------
+ZBP122   EconomyCar  true  true          0        $515.00    
+
+Rental Duration: 2 Days
+Rental Total Cost: $515.0
+
+Daily Total: 2895.0
+----------------------------------------
+Day: 24
+Remaining Cars at the beginning of the day: 11
+Cars left: PEP213, UFF974, OCW805, ZXR660, SUK006, RGW802, KXQ659, PCZ106, VWI702, YFX513, JOV368
+
+ # # # Current Rental Situation # # # 
+Laura currently has: 
+MWM654, 
+
+Liam currently has: 
+LJR299, 
+
+Yash currently has: 
+FQK762, LNW723, 
+
+Lenny currently has: 
+HRS483, XLY048, 
+
+Chandler currently has: 
+YPS310, IYS297, CAN597, 
+
+Phoebe currently has: 
+ZCU130, NSN451, 
+
+Monica currently has: 
+ZBP122, 
+
+Marcel currently has: 
+LUM573, 
+
+Number of cars out for rental: 13 
+ 
+ # # # Rents for the Day # # # 
+Laura's Rental Receipt (CasualCustomer):
+CarPlate CarType     GPS   Satellite     CarSeats Price     
+----------------------------------------------------
+PEP213   EconomyCar  false false         2        $305.00    
+
+Rental Duration: 2 Days
+Rental Total Cost: $305.0
+
+Yash's Rental Receipt (CasualCustomer):
+CarPlate CarType     GPS   Satellite     CarSeats Price     
+----------------------------------------------------
+UFF974   StandardCar true  false         1        $505.00    
+
+Rental Duration: 1 Days
+Rental Total Cost: $505.0
+
+Jim's Rental Receipt (CasualCustomer):
+CarPlate CarType     GPS   Satellite     CarSeats Price     
+----------------------------------------------------
+OCW805   StandardCar true  true          0        $210.00    
+
+Rental Duration: 2 Days
+Rental Total Cost: $210.0
+
+Ross's Rental Receipt (CasualCustomer):
+CarPlate CarType     GPS   Satellite     CarSeats Price     
+----------------------------------------------------
+ZXR660   EconomyCar  true  false         2        $315.00    
+
+Rental Duration: 3 Days
+Rental Total Cost: $315.0
+
+Rachel's Rental Receipt (RegularCustomer):
+CarPlate CarType     GPS   Satellite     CarSeats Price     
+----------------------------------------------------
+2
+SUK006   LuxuryCar   true  true          1        $645.00    
+RGW802   LuxuryCar   true  false         0        $625.00    
+KXQ659   StandardCar true  true          0        $310.00    
+
+Rental Duration: 3 Days
+Rental Total Cost: $1580.0
+
+Monica's Rental Receipt (CasualCustomer):
+CarPlate CarType     GPS   Satellite     CarSeats Price     
+----------------------------------------------------
+PCZ106   LuxuryCar   true  true          1        $845.00    
+
+Rental Duration: 2 Days
+Rental Total Cost: $845.0
+
+Daily Total: 3760.0
+----------------------------------------
+Day: 25
+Remaining Cars at the beginning of the day: 8
+Cars left: VWI702, YFX513, JOV368, MWM654, LNW723, YPS310, ZBP122, LUM573
+
+ # # # Current Rental Situation # # # 
+Laura currently has: 
+PEP213, 
+
+Liam currently has: 
+LJR299, 
+
+Yash currently has: 
+FQK762, UFF974, 
+
+Lenny currently has: 
+HRS483, XLY048, 
+
+Chandler currently has: 
+IYS297, CAN597, 
+
+Jim currently has: 
+OCW805, 
+
+Phoebe currently has: 
+ZCU130, NSN451, 
+
+Ross currently has: 
+ZXR660, 
+
+Rachel currently has: 
+SUK006, RGW802, KXQ659, 
+
+Monica currently has: 
+PCZ106, 
+
+Number of cars out for rental: 16 
+ 
+ # # # Rents for the Day # # # 
+Laura's Rental Receipt (CasualCustomer):
+CarPlate CarType     GPS   Satellite     CarSeats Price     
+----------------------------------------------------
+VWI702   StandardCar false false         1        $130.00    
+
+Rental Duration: 3 Days
+Rental Total Cost: $130.0
+
+Liam's Rental Receipt (RegularCustomer):
+CarPlate CarType     GPS   Satellite     CarSeats Price     
+----------------------------------------------------
+1
+YFX513   SUVCar      true  false         1        $160.00    
+JOV368   SUVCar      true  false         2        $610.00    
+
+Rental Duration: 5 Days
+Rental Total Cost: $770.0
+
+Lenny's Rental Receipt (RegularCustomer):
+CarPlate CarType     GPS   Satellite     CarSeats Price     
+----------------------------------------------------
+0
+MWM654   SUVCar      true  true          3        $175.00    
+
+Rental Duration: 4 Days
+Rental Total Cost: $175.0
+
+Jim's Rental Receipt (CasualCustomer):
+CarPlate CarType     GPS   Satellite     CarSeats Price     
+----------------------------------------------------
+LNW723   SUVCar      true  true          2        $475.00    
+
+Rental Duration: 2 Days
+Rental Total Cost: $475.0
+
+Phoebe's Rental Receipt (RegularCustomer):
+CarPlate CarType     GPS   Satellite     CarSeats Price     
+----------------------------------------------------
+0
+YPS310   EconomyCar  true  false         0        $305.00    
+
+Rental Duration: 4 Days
+Rental Total Cost: $305.0
+
+Ross's Rental Receipt (CasualCustomer):
+CarPlate CarType     GPS   Satellite     CarSeats Price     
+----------------------------------------------------
+ZBP122   EconomyCar  true  false         2        $515.00    
+
+Rental Duration: 1 Days
+Rental Total Cost: $515.0
+
+Joey's Rental Receipt (CasualCustomer):
+CarPlate CarType     GPS   Satellite     CarSeats Price     
+----------------------------------------------------
+LUM573   LuxuryCar   false true          3        $1025.00   
+
+Rental Duration: 3 Days
+Rental Total Cost: $1025.0
+
+Daily Total: 3395.0
+----------------------------------------
+Day: 26
+Remaining Cars at the beginning of the day: 5
+Cars left: FQK762, XLY048, OCW805, NSN451, ZBP122
+
+ # # # Current Rental Situation # # # 
+Laura currently has: 
+PEP213, VWI702, 
+
+Liam currently has: 
+LJR299, YFX513, JOV368, 
+
+Yash currently has: 
+UFF974, 
+
+Lenny currently has: 
+HRS483, MWM654, 
+
+Chandler currently has: 
+IYS297, CAN597, 
+
+Jim currently has: 
+LNW723, 
+
+Phoebe currently has: 
+ZCU130, YPS310, 
+
+Ross currently has: 
+ZXR660, 
+
+Rachel currently has: 
+SUK006, RGW802, KXQ659, 
+
+Joey currently has: 
+LUM573, 
+
+Monica currently has: 
+PCZ106, 
+
+Number of cars out for rental: 19 
+ 
+ # # # Rents for the Day # # # 
+Laura's Rental Receipt (CasualCustomer):
+CarPlate CarType     GPS   Satellite     CarSeats Price     
+----------------------------------------------------
+FQK762   SUVCar      true  false         3        $795.00    
+
+Rental Duration: 3 Days
+Rental Total Cost: $795.0
+
+Yash's Rental Receipt (CasualCustomer):
+CarPlate CarType     GPS   Satellite     CarSeats Price     
+----------------------------------------------------
+XLY048   EconomyCar  false true          0        $105.00    
+
+Rental Duration: 2 Days
+Rental Total Cost: $105.0
+
+Lenny's Rental Receipt (RegularCustomer):
+CarPlate CarType     GPS   Satellite     CarSeats Price     
+----------------------------------------------------
+0
+OCW805   StandardCar true  true          0        $210.00    
+
+Rental Duration: 3 Days
+Rental Total Cost: $210.0
+
+Phoebe's Rental Receipt (RegularCustomer):
+CarPlate CarType     GPS   Satellite     CarSeats Price     
+----------------------------------------------------
+0
+NSN451   MinivanCar  false false         3        $210.00    
+
+Rental Duration: 4 Days
+Rental Total Cost: $210.0
+
+Joey's Rental Receipt (CasualCustomer):
+CarPlate CarType     GPS   Satellite     CarSeats Price     
+----------------------------------------------------
+ZBP122   EconomyCar  false true          2        $515.00    
+
+Rental Duration: 2 Days
+Rental Total Cost: $515.0
+
+Daily Total: 1835.0
+----------------------------------------
+Day: 27
+Remaining Cars at the beginning of the day: 10
+Cars left: PEP213, LJR299, UFF974, HRS483, IYS297, ZCU130, ZXR660, SUK006, KXQ659, PCZ106
+
+ # # # Current Rental Situation # # # 
+Laura currently has: 
+VWI702, FQK762, 
+
+Liam currently has: 
+YFX513, JOV368, 
+
+Yash currently has: 
+XLY048, 
+
+Lenny currently has: 
+MWM654, OCW805, 
+
+Chandler currently has: 
+CAN597, 
+
+Jim currently has: 
+LNW723, 
+
+Phoebe currently has: 
+YPS310, NSN451, 
+
+Rachel currently has: 
+RGW802, 
+
+Joey currently has: 
+LUM573, ZBP122, 
+
+Number of cars out for rental: 14 
+ 
+ # # # Rents for the Day # # # 
+Liam's Rental Receipt (RegularCustomer):
+CarPlate CarType     GPS   Satellite     CarSeats Price     
+----------------------------------------------------
+0
+PEP213   EconomyCar  true  false         2        $305.00    
+
+Rental Duration: 4 Days
+Rental Total Cost: $305.0
+
+Yash's Rental Receipt (CasualCustomer):
+CarPlate CarType     GPS   Satellite     CarSeats Price     
+----------------------------------------------------
+LJR299   LuxuryCar   true  true          1        $1025.00   
+
+Rental Duration: 3 Days
+Rental Total Cost: $1025.0
+
+Lenny's Rental Receipt (RegularCustomer):
+CarPlate CarType     GPS   Satellite     CarSeats Price     
+----------------------------------------------------
+0
+UFF974   StandardCar false true          2        $505.00    
+
+Rental Duration: 3 Days
+Rental Total Cost: $505.0
+
+Chandler's Rental Receipt (RegularCustomer):
+CarPlate CarType     GPS   Satellite     CarSeats Price     
+----------------------------------------------------
+1
+HRS483   MinivanCar  true  true          3        $610.00    
+
+Rental Duration: 5 Days
+Rental Total Cost: $610.0
+
+Ross's Rental Receipt (CasualCustomer):
+CarPlate CarType     GPS   Satellite     CarSeats Price     
+----------------------------------------------------
+IYS297   StandardCar false true          3        $110.00    
+
+Rental Duration: 2 Days
+Rental Total Cost: $110.0
+
+Rachel's Rental Receipt (RegularCustomer):
+CarPlate CarType     GPS   Satellite     CarSeats Price     
+----------------------------------------------------
+1
+ZCU130   MinivanCar  false false         1        $805.00    
+
+Rental Duration: 3 Days
+Rental Total Cost: $805.0
+
+Monica's Rental Receipt (CasualCustomer):
+CarPlate CarType     GPS   Satellite     CarSeats Price     
+----------------------------------------------------
+ZXR660   EconomyCar  true  false         1        $315.00    
+
+Rental Duration: 1 Days
+Rental Total Cost: $315.0
+
+Marcel's Rental Receipt (CasualCustomer):
+CarPlate CarType     GPS   Satellite     CarSeats Price     
+----------------------------------------------------
+SUK006   LuxuryCar   false true          3        $645.00    
+
+Rental Duration: 1 Days
+Rental Total Cost: $645.0
+
+Daily Total: 4320.0
+----------------------------------------
+Day: 28
+Remaining Cars at the beginning of the day: 8
+Cars left: KXQ659, PCZ106, CAN597, LNW723, RGW802, LUM573, ZXR660, SUK006
+
+ # # # Current Rental Situation # # # 
+Laura currently has: 
+VWI702, FQK762, 
+
+Liam currently has: 
+YFX513, JOV368, PEP213, 
+
+Yash currently has: 
+XLY048, LJR299, 
+
+Lenny currently has: 
+MWM654, OCW805, UFF974, 
+
+Chandler currently has: 
+HRS483, 
+
+Phoebe currently has: 
+YPS310, NSN451, 
+
+Ross currently has: 
+IYS297, 
+
+Rachel currently has: 
+ZCU130, 
+
+Joey currently has: 
+ZBP122, 
+
+Number of cars out for rental: 16 
+ 
+ # # # Rents for the Day # # # 
+Jim's Rental Receipt (CasualCustomer):
+CarPlate CarType     GPS   Satellite     CarSeats Price     
+----------------------------------------------------
+KXQ659   StandardCar false false         3        $310.00    
+
+Rental Duration: 2 Days
+Rental Total Cost: $310.0
+
+Phoebe's Rental Receipt (RegularCustomer):
+CarPlate CarType     GPS   Satellite     CarSeats Price     
+----------------------------------------------------
+0
+PCZ106   LuxuryCar   true  false         2        $845.00    
+
+Rental Duration: 5 Days
+Rental Total Cost: $845.0
+
+Ross's Rental Receipt (CasualCustomer):
+CarPlate CarType     GPS   Satellite     CarSeats Price     
+----------------------------------------------------
+CAN597   MinivanCar  false false         0        $1010.00   
+
+Rental Duration: 2 Days
+Rental Total Cost: $1010.0
+
+Rachel's Rental Receipt (RegularCustomer):
+CarPlate CarType     GPS   Satellite     CarSeats Price     
+----------------------------------------------------
+1
+LNW723   SUVCar      true  false         3        $475.00    
+
+Rental Duration: 5 Days
+Rental Total Cost: $475.0
+
+Joey's Rental Receipt (CasualCustomer):
+CarPlate CarType     GPS   Satellite     CarSeats Price     
+----------------------------------------------------
+RGW802   LuxuryCar   true  true          0        $625.00    
+
+Rental Duration: 3 Days
+Rental Total Cost: $625.0
+
+Monica's Rental Receipt (CasualCustomer):
+CarPlate CarType     GPS   Satellite     CarSeats Price     
+----------------------------------------------------
+LUM573   LuxuryCar   true  true          0        $1025.00   
+
+Rental Duration: 2 Days
+Rental Total Cost: $1025.0
+
+Marcel's Rental Receipt (CasualCustomer):
+CarPlate CarType     GPS   Satellite     CarSeats Price     
+----------------------------------------------------
+ZXR660   EconomyCar  true  true          1        $315.00    
+
+Rental Duration: 1 Days
+Rental Total Cost: $315.0
+
+Daily Total: 4605.0
+----------------------------------------
+Day: 29
+Remaining Cars at the beginning of the day: 7
+Cars left: SUK006, VWI702, XLY048, OCW805, IYS297, ZBP122, ZXR660
+
+ # # # Current Rental Situation # # # 
+Laura currently has: 
+FQK762, 
+
+Liam currently has: 
+YFX513, JOV368, PEP213, 
+
+Yash currently has: 
+LJR299, 
+
+Lenny currently has: 
+MWM654, UFF974, 
+
+Chandler currently has: 
+HRS483, 
+
+Jim currently has: 
+KXQ659, 
+
+Phoebe currently has: 
+YPS310, NSN451, PCZ106, 
+
+Ross currently has: 
+CAN597, 
+
+Rachel currently has: 
+ZCU130, LNW723, 
+
+Joey currently has: 
+RGW802, 
+
+Monica currently has: 
+LUM573, 
+
+Number of cars out for rental: 17 
+ 
+ # # # Rents for the Day # # # 
+Chandler's Rental Receipt (RegularCustomer):
+CarPlate CarType     GPS   Satellite     CarSeats Price     
+----------------------------------------------------
+1
+SUK006   LuxuryCar   false true          2        $645.00    
+VWI702   StandardCar true  true          2        $130.00    
+
+Rental Duration: 5 Days
+Rental Total Cost: $775.0
+
+Rachel's Rental Receipt (RegularCustomer):
+CarPlate CarType     GPS   Satellite     CarSeats Price     
+----------------------------------------------------
+0
+XLY048   EconomyCar  true  true          0        $105.00    
+
+Rental Duration: 4 Days
+Rental Total Cost: $105.0
+
+Joey's Rental Receipt (CasualCustomer):
+CarPlate CarType     GPS   Satellite     CarSeats Price     
+----------------------------------------------------
+OCW805   StandardCar true  false         0        $210.00    
+
+Rental Duration: 2 Days
+Rental Total Cost: $210.0
+
+Daily Total: 1090.0
+----------------------------------------
+Day: 30
+Remaining Cars at the beginning of the day: 8
+Cars left: IYS297, ZBP122, ZXR660, FQK762, JOV368, KXQ659, NSN451, LUM573
+
+ # # # Current Rental Situation # # # 
+Liam currently has: 
+YFX513, PEP213, 
+
+Yash currently has: 
+LJR299, 
+
+Lenny currently has: 
+MWM654, UFF974, 
+
+Chandler currently has: 
+HRS483, SUK006, VWI702, 
+
+Phoebe currently has: 
+YPS310, PCZ106, 
+
+Ross currently has: 
+CAN597, 
+
+Rachel currently has: 
+ZCU130, LNW723, XLY048, 
+
+Joey currently has: 
+RGW802, OCW805, 
+
+Number of cars out for rental: 16 
+ 
+ # # # Rents for the Day # # # 
+Laura's Rental Receipt (CasualCustomer):
+CarPlate CarType     GPS   Satellite     CarSeats Price     
+----------------------------------------------------
+IYS297   StandardCar true  false         2        $110.00    
+
+Rental Duration: 1 Days
+Rental Total Cost: $110.0
+
+Jim's Rental Receipt (CasualCustomer):
+CarPlate CarType     GPS   Satellite     CarSeats Price     
+----------------------------------------------------
+ZBP122   EconomyCar  false false         1        $515.00    
+
+Rental Duration: 3 Days
+Rental Total Cost: $515.0
+
+Joey's Rental Receipt (CasualCustomer):
+CarPlate CarType     GPS   Satellite     CarSeats Price     
+----------------------------------------------------
+ZXR660   EconomyCar  false true          2        $315.00    
+
+Rental Duration: 1 Days
+Rental Total Cost: $315.0
+
+Monica's Rental Receipt (CasualCustomer):
+CarPlate CarType     GPS   Satellite     CarSeats Price     
+----------------------------------------------------
+FQK762   SUVCar      true  true          3        $795.00    
+
+Rental Duration: 2 Days
+Rental Total Cost: $795.0
+
+Marcel's Rental Receipt (CasualCustomer):
+CarPlate CarType     GPS   Satellite     CarSeats Price     
+----------------------------------------------------
+JOV368   SUVCar      true  false         0        $610.00    
+
+Rental Duration: 2 Days
+Rental Total Cost: $610.0
+
+Daily Total: 2345.0
+----------------------------------------
+Day: 31
+Remaining Cars at the beginning of the day: 11
+Cars left: KXQ659, NSN451, LUM573, IYS297, YFX513, LJR299, MWM654, YPS310, CAN597, ZCU130, OCW805
+
+ # # # Current Rental Situation # # # 
+Liam currently has: 
+PEP213, 
+
+Lenny currently has: 
+UFF974, 
+
+Chandler currently has: 
+HRS483, SUK006, VWI702, 
+
+Jim currently has: 
+ZBP122, 
+
+Phoebe currently has: 
+PCZ106, 
+
+Rachel currently has: 
+LNW723, XLY048, 
+
+Joey currently has: 
+RGW802, ZXR660, 
+
+Monica currently has: 
+FQK762, 
+
+Marcel currently has: 
+JOV368, 
+
+Number of cars out for rental: 13 
+ 
+ # # # Rents for the Day # # # 
+Liam's Rental Receipt (RegularCustomer):
+CarPlate CarType     GPS   Satellite     CarSeats Price     
+----------------------------------------------------
+1
+KXQ659   StandardCar false true          0        $310.00    
+NSN451   MinivanCar  true  true          2        $210.00    
+
+Rental Duration: 5 Days
+Rental Total Cost: $520.0
+
+Yash's Rental Receipt (CasualCustomer):
+CarPlate CarType     GPS   Satellite     CarSeats Price     
+----------------------------------------------------
+LUM573   LuxuryCar   false true          1        $1025.00   
+
+Rental Duration: 2 Days
+Rental Total Cost: $1025.0
+
+Jim's Rental Receipt (CasualCustomer):
+CarPlate CarType     GPS   Satellite     CarSeats Price     
+----------------------------------------------------
+IYS297   StandardCar true  false         1        $110.00    
+
+Rental Duration: 2 Days
+Rental Total Cost: $110.0
+
+Ross's Rental Receipt (CasualCustomer):
+CarPlate CarType     GPS   Satellite     CarSeats Price     
+----------------------------------------------------
+YFX513   SUVCar      true  false         2        $160.00    
+
+Rental Duration: 1 Days
+Rental Total Cost: $160.0
+
+Daily Total: 1815.0
+----------------------------------------
+Day: 32
+Remaining Cars at the beginning of the day: 11
+Cars left: LJR299, MWM654, YPS310, CAN597, ZCU130, OCW805, UFF974, YFX513, RGW802, FQK762, JOV368
+
+ # # # Current Rental Situation # # # 
+Liam currently has: 
+PEP213, KXQ659, NSN451, 
+
+Yash currently has: 
+LUM573, 
+
+Chandler currently has: 
+HRS483, SUK006, VWI702, 
+
+Jim currently has: 
+ZBP122, IYS297, 
+
+Phoebe currently has: 
+PCZ106, 
+
+Rachel currently has: 
+LNW723, XLY048, 
+
+Joey currently has: 
+ZXR660, 
+
+Number of cars out for rental: 13 
+ 
+ # # # Rents for the Day # # # 
+Yash's Rental Receipt (CasualCustomer):
+CarPlate CarType     GPS   Satellite     CarSeats Price     
+----------------------------------------------------
+LJR299   LuxuryCar   false false         3        $1025.00   
+
+Rental Duration: 3 Days
+Rental Total Cost: $1025.0
+
+Jim's Rental Receipt (CasualCustomer):
+CarPlate CarType     GPS   Satellite     CarSeats Price     
+----------------------------------------------------
+MWM654   SUVCar      false false         0        $175.00    
+
+Rental Duration: 1 Days
+Rental Total Cost: $175.0
+
+Ross's Rental Receipt (CasualCustomer):
+CarPlate CarType     GPS   Satellite     CarSeats Price     
+----------------------------------------------------
+YPS310   EconomyCar  true  true          2        $305.00    
+
+Rental Duration: 1 Days
+Rental Total Cost: $305.0
+
+Joey's Rental Receipt (CasualCustomer):
+CarPlate CarType     GPS   Satellite     CarSeats Price     
+----------------------------------------------------
+CAN597   MinivanCar  true  true          3        $1010.00   
+
+Rental Duration: 2 Days
+Rental Total Cost: $1010.0
+
+Daily Total: 2515.0
+----------------------------------------
+Day: 33
+Remaining Cars at the beginning of the day: 15
+Cars left: ZCU130, OCW805, UFF974, YFX513, RGW802, FQK762, JOV368, PEP213, LUM573, HRS483, ZBP122, MWM654, YPS310, XLY048, ZXR660
+
+ # # # Current Rental Situation # # # 
+Liam currently has: 
+KXQ659, NSN451, 
+
+Yash currently has: 
+LJR299, 
+
+Chandler currently has: 
+SUK006, VWI702, 
+
+Jim currently has: 
+IYS297, 
+
+Phoebe currently has: 
+PCZ106, 
+
+Rachel currently has: 
+LNW723, 
+
+Joey currently has: 
+CAN597, 
+
+Number of cars out for rental: 9 
+ 
+ # # # Rents for the Day # # # 
+Laura's Rental Receipt (CasualCustomer):
+CarPlate CarType     GPS   Satellite     CarSeats Price     
+----------------------------------------------------
+ZCU130   MinivanCar  false true          2        $805.00    
+
+Rental Duration: 3 Days
+Rental Total Cost: $805.0
+
+Chandler's Rental Receipt (RegularCustomer):
+CarPlate CarType     GPS   Satellite     CarSeats Price     
+----------------------------------------------------
+0
+OCW805   StandardCar true  true          3        $210.00    
+
+Rental Duration: 3 Days
+Rental Total Cost: $210.0
+
+Jim's Rental Receipt (CasualCustomer):
+CarPlate CarType     GPS   Satellite     CarSeats Price     
+----------------------------------------------------
+UFF974   StandardCar true  true          0        $505.00    
+
+Rental Duration: 2 Days
+Rental Total Cost: $505.0
+
+Phoebe's Rental Receipt (RegularCustomer):
+CarPlate CarType     GPS   Satellite     CarSeats Price     
+----------------------------------------------------
+1
+YFX513   SUVCar      true  false         0        $160.00    
+RGW802   LuxuryCar   false false         3        $625.00    
+
+Rental Duration: 4 Days
+Rental Total Cost: $785.0
+
+Monica's Rental Receipt (CasualCustomer):
+CarPlate CarType     GPS   Satellite     CarSeats Price     
+----------------------------------------------------
+FQK762   SUVCar      false false         3        $795.00    
+
+Rental Duration: 1 Days
+Rental Total Cost: $795.0
+
+Daily Total: 3100.0
+----------------------------------------
+Day: 34
+Remaining Cars at the beginning of the day: 13
+Cars left: JOV368, PEP213, LUM573, HRS483, ZBP122, MWM654, YPS310, XLY048, ZXR660, VWI702, IYS297, LNW723, FQK762
+
+ # # # Current Rental Situation # # # 
+Laura currently has: 
+ZCU130, 
+
+Liam currently has: 
+KXQ659, NSN451, 
+
+Yash currently has: 
+LJR299, 
+
+Chandler currently has: 
+SUK006, OCW805, 
+
+Jim currently has: 
+UFF974, 
+
+Phoebe currently has: 
+PCZ106, YFX513, RGW802, 
+
+Joey currently has: 
+CAN597, 
+
+Number of cars out for rental: 11 
+ 
+ # # # Rents for the Day # # # 
+Laura's Rental Receipt (CasualCustomer):
+CarPlate CarType     GPS   Satellite     CarSeats Price     
+----------------------------------------------------
+JOV368   SUVCar      false true          3        $610.00    
+
+Rental Duration: 3 Days
+Rental Total Cost: $610.0
+
+Liam's Rental Receipt (RegularCustomer):
+CarPlate CarType     GPS   Satellite     CarSeats Price     
+----------------------------------------------------
+0
+PEP213   EconomyCar  true  false         3        $305.00    
+
+Rental Duration: 5 Days
+Rental Total Cost: $305.0
+
+Lenny's Rental Receipt (RegularCustomer):
+CarPlate CarType     GPS   Satellite     CarSeats Price     
+----------------------------------------------------
+2
+LUM573   LuxuryCar   true  true          0        $1025.00   
+
+Rental Duration: 3 Days
+Rental Total Cost: $1025.0
+
+Ross's Rental Receipt (CasualCustomer):
+CarPlate CarType     GPS   Satellite     CarSeats Price     
+----------------------------------------------------
+HRS483   MinivanCar  false false         1        $610.00    
+
+Rental Duration: 1 Days
+Rental Total Cost: $610.0
+
+Marcel's Rental Receipt (CasualCustomer):
+CarPlate CarType     GPS   Satellite     CarSeats Price     
+----------------------------------------------------
+ZBP122   EconomyCar  false false         2        $515.00    
+
+Rental Duration: 3 Days
+Rental Total Cost: $515.0
+
+Daily Total: 3065.0
+----------------------------------------
+Total amount made: $94500.0
+Total number of rentals made: 198
+Total number of Business rentals made: 0
+Total number of Casual rentals made: 112
+Total number of Regular rentals made: 86
