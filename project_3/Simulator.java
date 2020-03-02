@@ -13,8 +13,6 @@ public class Simulator {
         }
         System.out.println("----------------------------------------");
 
-        System.out.println(" ######  FINAL OUTPUT   ###### ");
-
 
     }
 }
