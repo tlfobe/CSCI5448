@@ -96,7 +96,8 @@ class RegularRentCar extends RentCarBehavior {
         // should probably implement a check to make
         //  sure we don't pull from an empty shop
         int n_nights = new Random().nextInt(2 + 1) + 3;
-        int range_cars = Math.min(shop.size(), 3) - 1;
+        int range_cars = Math.min(shop.size(), Math.min(3, 3 - customer.rented_cars.size())) - 1;
+        System.out.println(range_cars);
         int n_cars = new Random().nextInt(range_cars + 1) + 1;
         generalRentCars(shop, n_cars, n_nights);
         return n_cars;

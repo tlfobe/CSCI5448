@@ -70,7 +70,7 @@ class CasualCustomer extends Customer {
         _setReturnCarBehavior(new UniversalReturnCar(this));
     }
     protected void updateViable(int n_cars_available) {
-        if (n_cars_available >= 1) {
+        if (n_cars_available >= 1 && rented_cars.size() < 3) {
             is_viable = true;
         } else {
             is_viable = false;
@@ -85,7 +85,7 @@ class RegularCustomer extends Customer {
         _setReturnCarBehavior(new UniversalReturnCar(this));
     }
     protected void updateViable(int n_cars_available) {
-        if (n_cars_available >= 1) {
+        if (n_cars_available >= 1 && rented_cars.size() < 3) {
             is_viable = true;
         } else {
             is_viable = false;
@@ -100,7 +100,7 @@ class BusinessCustomer extends Customer {
         _setReturnCarBehavior(new UniversalReturnCar(this));
     }
     protected void updateViable(int n_cars_available) {
-        if (n_cars_available >= 3) {
+        if (n_cars_available >= 3 && rented_cars.size() < 3) {
             is_viable = true;
         } else {
             is_viable = false;
