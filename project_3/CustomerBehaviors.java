@@ -26,6 +26,7 @@ abstract class RentCarBehavior extends Behavior {
     abstract int rentCars(Shop shop);
 
     protected void  generalRentCars(Shop shop, int n_cars, int n_nights) {
+        float payment = 0;
         for (int i = 0; i < n_cars; i++) {
             Car car = shop.get(n_nights);
             setPrefences(shop); // gives different preferences per car
@@ -45,9 +46,10 @@ abstract class RentCarBehavior extends Behavior {
             System.out.println("GPS: " + String.valueOf(wantGPS));
             System.out.println("Satelite Radio: " + String.valueOf(wantSateliteRadio));
             System.out.println("Car Seats: " + String.valueOf(carSeats));
-
-            shop.collectPayment(car.cost());
+            payment += car.cost();
         }
+        System.out.println("Rental Total Cost: $" + String.valueOf(payment));
+        shop.collectPayment(payment);
     }
 }
 
