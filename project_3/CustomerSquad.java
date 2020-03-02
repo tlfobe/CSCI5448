@@ -32,6 +32,8 @@ public class CustomerSquad {
 
     public void runDay() {
 
+
+        // day cycle (inventory)
         System.out.println(" # # # Current Rental Situation # # # ");
         int cars_out_for_rent = 0;
         for(Customer c: customers) {
@@ -50,7 +52,6 @@ public class CustomerSquad {
         System.out.println(" # # # Rents for the Day # # # ");
         for(Customer c : customers) {
             if(new Random().nextFloat() > 0.5f && c.getViable()) {
-                // System.out.println(c.name + " is renting a car.");
                 System.out.println(c.name + ", is a " + c.getClass().getSimpleName() + ", rents the following car(s): ");
                 int customer_rents = c.rentCars(shop);
                 rents += customer_rents;
@@ -72,7 +73,7 @@ public class CustomerSquad {
         for(Customer c : customers) {c.endDay();}
         float dailyTotal = shop.getDailyTotal();
         fullTotal += dailyTotal;
-        System.out.println("Daily Total: " + dailyTotal);
+        System.out.println("Daily Total: $" + dailyTotal);
         shop.resetDay();
     }
 

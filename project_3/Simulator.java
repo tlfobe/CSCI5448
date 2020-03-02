@@ -3,12 +3,13 @@ public class Simulator {
         Shop lennyYash = new Shop(24);
         CustomerSquad squad = new CustomerSquad(lennyYash, 12);
         
+        // main loop
         for(int i=0; i < 35; i++) {
             System.out.println("----------------------------------------");
             System.out.println("Day: " + i);
-            lennyYash.listRemainingCars();
+            lennyYash.listRemainingCars(); // inventory
             System.out.println();
-            squad.runDay();
+            squad.runDay(); // renting cars and outputting information
             lennyYash.setState();
         }
         System.out.println("----------------------------------------");

@@ -90,8 +90,10 @@ class MinivanCar extends Car {
 
 public class CarFactory {
     private String generatePlate() {
+
+        
         String p = "";
-        int n = 'Z' - 'A' + 1;
+        int n = 'Z' - 'A' + 1; // int value of the char
         int m = '9' - '0' + 1;
         for (int i = 0; i < 3; i++) {
             char c = (char) ('A' + Math.random() * n);
