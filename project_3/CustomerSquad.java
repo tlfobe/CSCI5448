@@ -48,6 +48,7 @@ public class CustomerSquad {
 
         // day cycle (renting cars)
         System.out.println(" # # # Rents for the Day # # # ");
+        int daily_rents = 0;
         for(Customer c : customers) {
             if(new Random().nextFloat() > 0.5f && c.getViable()) {
                 // System.out.println(c.name + " is renting a car.");
@@ -61,6 +62,7 @@ public class CustomerSquad {
                                   "Price");
                 System.out.println("-------------------------------------------------------");
                 int customer_rents = c.rentCars(shop);
+                daily_rents += customer_rents;
                 rents += customer_rents;
                 if(c.getClass().getSimpleName().equals("BusinessCustomer")) {
                     business_rents += customer_rents;
@@ -80,6 +82,7 @@ public class CustomerSquad {
         for(Customer c : customers) {c.endDay();}
         float dailyTotal = shop.getDailyTotal();
         fullTotal += dailyTotal;
+        System.out.println("Daily Rentals: " + String.valueOf(daily_rents));
         System.out.println("Daily Total: " + dailyTotal);
         shop.resetDay();
     }

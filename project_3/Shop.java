@@ -10,9 +10,9 @@ import java.util.concurrent.LinkedBlockingQueue;
 
 
 interface Pool {
-    Car get(int n_nights);
-    void release(Car object);
-    void shutdown();
+    public Car get(int n_nights);
+    public void release(Car object);
+    public void shutdown();
 }
 
 class CarPool extends CarFactory implements Pool {
@@ -131,12 +131,6 @@ public class Shop implements Subject{
             else {System.out.print(c.licensePlate); }
         }
         System.out.println();
-
-
-
-
-
-
     } 
 
     public float getDailyTotal() {
@@ -178,14 +172,4 @@ public class Shop implements Subject{
             obs.update();
         }
     }
-
 }
-
-
-
-
-
-
-
-
-

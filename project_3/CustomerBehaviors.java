@@ -11,9 +11,9 @@ abstract class Behavior {
 }
 
 abstract class RentCarBehavior extends Behavior {
-    boolean wantGPS;
-    boolean wantSateliteRadio;
-    int carSeats;
+    protected boolean wantGPS;
+    protected boolean wantSateliteRadio;
+    protected int carSeats;
     public RentCarBehavior(Customer customer) {
         super(customer);
     }
