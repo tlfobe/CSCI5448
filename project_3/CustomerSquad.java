@@ -6,7 +6,11 @@ public class CustomerSquad {
     CustomerFactory fact;
     Shop shop;
     float fullTotal = 0.0f;
-    int number_of_rentals = 0;
+    int rents = 0;
+    int casual_rents = 0;
+    int business_rents = 0;
+    int regular_rents = 0;
+    
     List<Customer> customers = new ArrayList<Customer>();
 
     public CustomerSquad(Shop shop, int number_customers) {
@@ -48,7 +52,17 @@ public class CustomerSquad {
             if(new Random().nextFloat() > 0.5f && c.getViable()) {
                 // System.out.println(c.name + " is renting a car.");
                 System.out.println(c.name + ", is a " + c.getClass().getSimpleName() + ", rents the following car(s): ");
-                number_of_rentals += c.rentCars(shop);
+                int customer_rents = c.rentCars(shop);
+                rents += customer_rents;
+                if(c.getClass().getSimpleName().equals("BusinessCustomer")) {
+                    business_rents += customer_rents;
+                } else if(c.getClass().getSimpleName().equals("CasualCustomer")) {
+                    casual_rents += customer_rents;
+                } else if(c.getClass().getSimpleName().equals("RegularCustomer")) {
+                    regular_rents += customer_rents;
+                }
+
+
                 System.out.println();
                 shop.setState();
             }
