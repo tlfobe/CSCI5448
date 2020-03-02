@@ -4,7 +4,7 @@ public class Simulator {
         CustomerSquad squad = new CustomerSquad(lennyYash, 12);
         
         // main loop
-        for(int i=0; i < 35; i++) {
+        for(int i=0; i < 36; i++) {
             System.out.println("----------------------------------------");
             System.out.println("Day: " + i);
             lennyYash.listRemainingCars(); // inventory

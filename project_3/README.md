@@ -122,3 +122,16 @@ Rental Total Cost: $102.5
 Daily Rentals: 8
 Daily Total: 7182.5
 ```
+
+At the end of the simulation the simulator outputs some summary figures:
+- Total money made throughout the simulation
+- Total number of rentals
+- Breakdown of how many of each type of customer rented from the shop
+
+```
+Total amount made: $120312.5
+Total number of rentals made: 172
+Total number of Business rentals made: 66
+Total number of Casual rentals made: 55
+Total number of Regular rentals made: 51
+```
